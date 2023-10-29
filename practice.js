@@ -130,3 +130,9 @@ function distinguishNumber(number){
     return number1+number2 
   }
   // 같은 방법으로 빼기, 곱하기, 나눗셈 하면된다.
+
+// 20번 10을 3으로 나눈 나머지를 구하는 코드를 작성하세요.
+  function namuji(number1,number2){
+    return number1%number2
+  }
+  console.log(namuji(10,3))
