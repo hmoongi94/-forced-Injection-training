@@ -285,3 +285,9 @@ function distinguishNumber(number){
   // 점표기법과 대괄호표기법
   console.log(addressObject.address)
   console.log(addressObject['number']) 
+
+// 33번 객체에 새로운 속성을 동적으로 추가하는 코드를 작성하세요.
+  addressObject.city = "대전광역시"
+  addressObject[182] = "도로명"
+  console.log(addressObject)
+  // 점표기법은 문자열만 되고 대괄호는 숫자도 가능?
