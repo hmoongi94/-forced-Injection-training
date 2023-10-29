@@ -172,3 +172,13 @@ function distinguishNumber(number){
   }
 
   // compareIfxyequalAndZIs0(x,y,z)
+
+// 23번 x를 y로 나눈 몫을 구하는 코드를 작성해보세요.
+  // let x = 10
+  // let y = 2
+    function xDivideY(x,y){
+      return x/y
+    }
+    // console.log(xDivideY(x,y))
+
+// 24번 
