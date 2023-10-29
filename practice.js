@@ -295,3 +295,5 @@ function distinguishNumber(number){
 // 34번 객체의 속성을 삭제하는 코드를 작성하세요.
   delete addressObject[182]
   console.log(addressObject)
+
+// 35번 객체의 모든 속성을 순회하며 출력하는 코드를 작성하세요.
