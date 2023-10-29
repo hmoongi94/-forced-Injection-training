@@ -136,3 +136,13 @@ function distinguishNumber(number){
     return number1%number2
   }
   console.log(namuji(10,3))
+
+// 21번 x가 y보다 큰지 확인하는 조건식을 작성해보세요.
+  function compareXY(x,y){
+    if(x>y){
+      return true
+    } else{
+      return false
+    }
+  }
+  console.log(compareXY(3,10))
