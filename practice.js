@@ -181,4 +181,17 @@ function distinguishNumber(number){
     }
     // console.log(xDivideY(x,y))
 
-// 24번 
+// 24번 두 변수 x,y의 값을 서로 교환하는 코드를 작성해보세요.
+  let x = 5;
+  let y = 10;
+
+  [x, y] = [y, x];
+  console.log(x)
+  console.log(y)
+  // 디스트럭쳐링
+  // const numbers = [1, 2, 3, 4];
+  // const [a, b, c, d] = numbers;
+  // console.log(a); // 1
+  // console.log(b); // 2
+  // console.log(c); // 3
+  // console.log(d); // 4
