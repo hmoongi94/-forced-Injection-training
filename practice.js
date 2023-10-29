@@ -291,3 +291,7 @@ function distinguishNumber(number){
   addressObject[182] = "도로명"
   console.log(addressObject)
   // 점표기법은 문자열만 되고 대괄호는 숫자도 가능?
+
+// 34번 객체의 속성을 삭제하는 코드를 작성하세요.
+  delete addressObject[182]
+  console.log(addressObject)
