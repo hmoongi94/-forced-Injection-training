@@ -115,3 +115,6 @@ function distinguishNumber(number){
   // console.log(typeof arr);  // 출력: "object"
   // console.log(typeof obj);  // 출력: "object"
   // console.log(typeof func); // 출력: "function"
+
+// 17번. 자바스크립트에서 ==와 ===의 차이점을 설명해보세요.
+  // ==는 값만 비교하고 데이터 유형을 무시하므로 혼란을 일으킬 수 있습니다. ===는 값과 데이터 유형을 모두 비교하므로 일반적으로 더 엄격한 비교를 수행하는 것이 좋습니다. 때문에 ===를 사용하여 비교하는 것을 권장합니다.
