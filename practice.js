@@ -280,3 +280,8 @@ function distinguishNumber(number){
     'number': 182
   }
   console.log(addressObject)
+
+// 32번 객체의 속성에 접근하는 두 가지 방법을 코드로 작성하세요.
+  // 점표기법과 대괄호표기법
+  console.log(addressObject.address)
+  console.log(addressObject['number']) 
