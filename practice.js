@@ -243,3 +243,12 @@ function distinguishNumber(number){
     // 예외 처리
     console.error("예외가 발생했습니다:", error);
   }
+
+// 28번 continue문을 사용해 짝수만 출력하는 코드를 작성하세요.
+  for (let i = 1; i <= 10; i++) {
+    if (i % 2 !== 0) {
+      continue; // 홀수인 경우 건너뛰기
+    }
+    console.log(i); // 짝수만 출력
+  }
+  
