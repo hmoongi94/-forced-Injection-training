@@ -253,10 +253,23 @@ function distinguishNumber(number){
   // }
   
 // 29번 break문을 사용해 반복문을 중단하는 코드를 작성하세요.
-  for (let i = 1; i <= 10; i++) {
-    console.log(i);
-    if (i >= 6) {
-      // i가 5 이상이면 반복문 중단
-      break;
-    }
-  }
+  // for (let i = 1; i <= 10; i++) {
+  //   console.log(i);
+  //   if (i >= 6) {
+  //     // i가 5 이상이면 반복문 중단
+  //     break;
+  //   }
+  // }
+
+// 30번 비어있는 객체를 선언하는 코드를 작성하세요.
+  let emptyObject= {}
+
+  emptyObject.name = 'Hong';  // 프로퍼티 key1에 value1 할당
+  emptyObject.age = '30';  // 프로퍼티 key2에 value2 할당
+
+  console.log(emptyObject)
+  // 객체 생성자 사용
+  const person = new Object();
+  person.name = 'Hong';
+  person.age = 30;
+  console.log(person)
