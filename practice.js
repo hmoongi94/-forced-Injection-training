@@ -231,3 +231,15 @@ function distinguishNumber(number){
     default:
       console.log("올바른 요일이 아닙니다.");
   }
+
+// 27번 try/catch 문을 사용해 변수가 어떤 값인지 분기하는 코드를 작성하세요.
+  try {
+    // 어떤 작업에서 예외 발생
+    let result = 10 / 0;
+
+    // 예외 발생하지 않으면 아래 코드 실행
+    console.log("결과:", result);
+  } catch (error) {
+    // 예외 처리
+    console.error("예외가 발생했습니다:", error);
+  }
