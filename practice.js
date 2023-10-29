@@ -79,8 +79,10 @@ function distinguishNumber(number){
   // 11. with 문 금지: with 문은 엄격 모드에서 사용할 수 없습니다.
 
 // 13번 자바스크립트에서 대소문자를 구분하는 예를 들어보세요.
-  // var apple = "사과";
-  // var Apple = "애플";
+  var apple = "사과";
+  var Apple = "애플";
+  console.log(apple)
+  console.log(Apple)
   // 자바스크립트에서는 대소문자는 구별되므로 아예 다른 변수이다.
 
 // 14번 자바스크립트에서 사용하는 데이터타입들을 나열하세요.
@@ -100,21 +102,31 @@ function distinguishNumber(number){
   // true와 truthy의 차이: true는 직접적인 참 값이고, "truthy"는 조건식에서 참으로 평가되는 다양한 값의 범주를 나타냅니다.
 
 // 16번 typeof 연산자를 사용해 변수의 타입을 확인하는 예제 코드를 작성하세요.
-  // let num = 42;
-  // let str = "Hello, world";
-  // let bool = true;
-  // let arr = [1, 2, 3];
-  // let obj = { key: "value" };
-  // let func = function () {
-  //     console.log("Function");
-  // };
+  let num = 42;
+  let str = "Hello, world";
+  let bool = true;
+  let arr = [1, 2, 3];
+  let obj = { key: "value" };
+  let func = function () {
+      console.log("Function");
+  };
 
-  // console.log(typeof num);  // 출력: "number"
-  // console.log(typeof str);  // 출력: "string"
-  // console.log(typeof bool); // 출력: "boolean"
-  // console.log(typeof arr);  // 출력: "object"
-  // console.log(typeof obj);  // 출력: "object"
-  // console.log(typeof func); // 출력: "function"
+  console.log(typeof num);  // 출력: "number"
+  console.log(typeof str);  // 출력: "string"
+  console.log(typeof bool); // 출력: "boolean"
+  console.log(typeof arr);  // 출력: "object"
+  console.log(typeof obj);  // 출력: "object"
+  console.log(typeof func); // 출력: "function"
 
 // 17번. 자바스크립트에서 ==와 ===의 차이점을 설명해보세요.
   // ==는 값만 비교하고 데이터 유형을 무시하므로 혼란을 일으킬 수 있습니다. ===는 값과 데이터 유형을 모두 비교하므로 일반적으로 더 엄격한 비교를 수행하는 것이 좋습니다. 때문에 ===를 사용하여 비교하는 것을 권장합니다.
+
+// 18번 변수 x에 값 10을 할당하고, x의 값이 10인지 확인하는 코드를 작성해보세요.
+  let x = 10;
+  console.log(x)
+
+// 19번 +, -, *, / 연산자를 사용해 간단한 산술 연산을 하는 코드를 작성하세요.
+  function plus(number1,number2){
+    return number1+number2 
+  }
+  // 같은 방법으로 빼기, 곱하기, 나눗셈 하면된다.
