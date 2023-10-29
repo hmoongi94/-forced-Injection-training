@@ -122,8 +122,8 @@ function distinguishNumber(number){
   // ==는 값만 비교하고 데이터 유형을 무시하므로 혼란을 일으킬 수 있습니다. ===는 값과 데이터 유형을 모두 비교하므로 일반적으로 더 엄격한 비교를 수행하는 것이 좋습니다. 때문에 ===를 사용하여 비교하는 것을 권장합니다.
 
 // 18번 변수 x에 값 10을 할당하고, x의 값이 10인지 확인하는 코드를 작성해보세요.
-  let x = 10;
-  console.log(x)
+  // let x = 10;
+  // console.log(x)
 
 // 19번 +, -, *, / 연산자를 사용해 간단한 산술 연산을 하는 코드를 작성하세요.
   function plus(number1,number2){
@@ -138,6 +138,8 @@ function distinguishNumber(number){
   console.log(namuji(10,3))
 
 // 21번 x가 y보다 큰지 확인하는 조건식을 작성해보세요.
+  // let x= 3
+  // let y= 10
   function compareXY(x,y){
     if(x>y){
       return true
@@ -145,4 +147,28 @@ function distinguishNumber(number){
       return false
     }
   }
-  console.log(compareXY(3,10))
+  // console.log(compareXY(x,y))
+
+// 22번 x가 y와 같은지, 그리고  z가 0이 아닌지 확인하는 복합 조건식을 작성해보세요.
+  // let x= 3
+  // let y= 10
+  // let z= 1
+  function compareIfxyequalAndZIs0(x,y,z){
+    if(x===y){
+      console.log("x와 y는 같습니다.")
+      if(z===0){
+        console.log("z는 0이 맞습니다.")
+      } else{
+        console.log("z는 0이 아닙니다.")
+      }
+    } else{
+      console.log("x와 y는 다릅니다.")
+      if(z===0){
+        console.log("z는 0이 맞습니다.")
+      } else{
+        console.log("z는 0이 아닙니다.")
+      }
+    }   
+  }
+
+  // compareIfxyequalAndZIs0(x,y,z)
