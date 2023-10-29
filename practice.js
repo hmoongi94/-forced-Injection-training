@@ -98,3 +98,20 @@ function distinguishNumber(number){
 // 15번 조건문에서 truthy와 falsy라는 개념이 무엇인가요? 각각의 예를 들어보세요.
   // 조건문에서 "Truthy" 값은 조건을 충족하는 것으로 간주되며, "Falsy" 값은 조건을 충족하지 않는 것으로 간주됩니다. 이러한 개념을 사용하여 조건문에서 다양한 상황에 따라 코드를 실행하거나 제어할 수 있습니다.
   // true와 truthy의 차이: true는 직접적인 참 값이고, "truthy"는 조건식에서 참으로 평가되는 다양한 값의 범주를 나타냅니다.
+
+// 16번 typeof 연산자를 사용해 변수의 타입을 확인하는 예제 코드를 작성하세요.
+  // let num = 42;
+  // let str = "Hello, world";
+  // let bool = true;
+  // let arr = [1, 2, 3];
+  // let obj = { key: "value" };
+  // let func = function () {
+  //     console.log("Function");
+  // };
+
+  // console.log(typeof num);  // 출력: "number"
+  // console.log(typeof str);  // 출력: "string"
+  // console.log(typeof bool); // 출력: "boolean"
+  // console.log(typeof arr);  // 출력: "object"
+  // console.log(typeof obj);  // 출력: "object"
+  // console.log(typeof func); // 출력: "function"
