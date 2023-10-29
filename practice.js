@@ -245,10 +245,18 @@ function distinguishNumber(number){
   }
 
 // 28번 continue문을 사용해 짝수만 출력하는 코드를 작성하세요.
-  for (let i = 1; i <= 10; i++) {
-    if (i % 2 !== 0) {
-      continue; // 홀수인 경우 건너뛰기
-    }
-    console.log(i); // 짝수만 출력
-  }
+  // for (let i = 1; i <= 10; i++) {
+  //   if (i % 2 !== 0) {
+  //     continue; // 홀수인 경우 건너뛰기
+  //   }
+  //   console.log(i); // 짝수만 출력
+  // }
   
+// 29번 break문을 사용해 반복문을 중단하는 코드를 작성하세요.
+  for (let i = 1; i <= 10; i++) {
+    console.log(i);
+    if (i >= 6) {
+      // i가 5 이상이면 반복문 중단
+      break;
+    }
+  }
