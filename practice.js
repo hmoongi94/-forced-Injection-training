@@ -203,4 +203,31 @@ function distinguishNumber(number){
   //   i++
   // }
 
-// 26번 
+// 26번 switch문을 사용해 변수가 어떤 값인지 분기하는 코드를 작성하세요.
+  let day = "일요일";
+
+  switch (day) {
+    case "월요일":
+      console.log("오늘은 월요일입니다.");
+      break;
+    case "화요일":
+      console.log("오늘은 화요일입니다.");
+      break;
+    case "수요일":
+      console.log("오늘은 수요일입니다.");
+      break;
+    case "목요일":
+      console.log("오늘은 목요일입니다.");
+      break;
+    case "금요일":
+      console.log("오늘은 금요일입니다.");
+      break;
+    case "토요일":
+      console.log("오늘은 토요일입니다.");
+      break;
+    case "일요일":
+      console.log("오늘은 일요일입니다.");
+      break;
+    default:
+      console.log("올바른 요일이 아닙니다.");
+  }
