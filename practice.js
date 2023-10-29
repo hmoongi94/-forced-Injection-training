@@ -18,9 +18,9 @@ function plus(number1,number2){
 console.log(plus(5,10))
 
 // 5번 for 반복문을 사용하여 1~10까지의 수를 출력하는 코드를 작성하세요. 
-for(i=1; i<=10; i++){
-  console.log(i)
-}
+// for(i=1; i<=10; i++){
+//   console.log(i)
+// }
 
 // 6번 if문을 사용하여 어떤 변수가 짝수인지 홀수인지 판별하는 코드를 작성하세요.
   // /나누기 값, %는 나머지
@@ -195,3 +195,12 @@ function distinguishNumber(number){
   // console.log(b); // 2
   // console.log(c); // 3
   // console.log(d); // 4
+
+// 25번 while문을 사용해 1부터 10까지는 수를 출력하는 코드를 작성하세요.
+  // let i = 1;
+  // while(i<=10){
+  //   console.log(i);
+  //   i++
+  // }
+
+// 26번 
