@@ -346,9 +346,13 @@ function distinguishNumber(number){
   // 3. concat: 배열끼리 합칠 때
   // 4. 배열인덱스에 접근
   // 5. 전개연산자
+  // 6. splice
   // const fruits = ["apple", "banana"];
   // const newFruit = "cherry";
   // const allFruits = [...fruits, newFruit]; // 배열을 확장하여 새로운 원소 추가
   // console.log(allFruits); // ["apple", "banana", "cherry"]
 
-// 40번 
+// 40번 배열에서 특정 원소를 제거하는 코드를 작성하세요.
+  const fruits = ["apple", "banana", "cherry"];
+  // 1. splice(): 배열에서 '특정위치'에 있는 원소를 제거할 수 있다.
+  // 
