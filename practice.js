@@ -313,3 +313,24 @@ function distinguishNumber(number){
   // Object.keys(myObject).forEach(key => {
   // console.log(key + ": " + myObject[key]);
   // });
+
+// 36번 this 키워드에 대해 설명하고 사용 예를 만드세요.
+  // 1. 전역 컨텍스트: 전역 스코프에서 'this'는 전역객체를 가리킨다.
+  // 2. 함수 내부 
+  // function sayHello() {
+  //   console.log("Hello, " + this.name);
+  // }
+  
+  // const person = { name: "Alice" };
+  // const anotherPerson = { name: "Bob" };
+  
+  // person.sayHello = sayHello;
+  // anotherPerson.sayHello = sayHello;
+  
+  // person.sayHello(); // "Hello, Alice"
+  // anotherPerson.sayHello(); // "Hello, Bob"
+  // 3. 객체 메서드: 객체 메서드내에서 'this'는 해당 메서드를 호출한 객체를 가리킴
+  // 4. 이벤트 핸들러: 이벤트 핸들러 내에서 this는 이벤트 대상 요소를 가리킵니다.
+  // 5. 생성자 함수: 생성자 함수를 사용하여 객체를 생성할 때 this는 새로 생성된 객체를 가리킵니다.
+
+  
