@@ -353,6 +353,10 @@ function distinguishNumber(number){
   // console.log(allFruits); // ["apple", "banana", "cherry"]
 
 // 40번 배열에서 특정 원소를 제거하는 코드를 작성하세요.
-  const fruits = ["apple", "banana", "cherry"];
+  const fruits = ["apple", "banana", "cherry","peach","grape"];
   // 1. splice(): 배열에서 '특정위치'에 있는 원소를 제거할 수 있다.
-  // 
+  // splice(start,deleteCount,item1,item2,-----)
+  // fruits.splice(1,2,"사과")
+  // console.log(fruits)
+
+  // 2. 
