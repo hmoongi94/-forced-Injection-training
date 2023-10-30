@@ -333,4 +333,22 @@ function distinguishNumber(number){
   // 4. 이벤트 핸들러: 이벤트 핸들러 내에서 this는 이벤트 대상 요소를 가리킵니다.
   // 5. 생성자 함수: 생성자 함수를 사용하여 객체를 생성할 때 this는 새로 생성된 객체를 가리킵니다.
 
-  
+// 37번 비어있는 배열을 선언하는 코드를 선언하세요.
+  // const emptyarray = []
+
+// 38번 1부터 5까지의 숫자를 원소로 갖는 배열을 선언하는 코드를 작성하세요.
+  // const array =[1,2,3,4,5]
+
+// 39번 배열에 새로운 원소를 추가하는 코드를 작성하세요.
+  const array = [1,2,3,4,5]
+  // 1. push: 끝에 자리에 추가
+  // 2. unshift: 첫번째자리에 추가
+  // 3. concat: 배열끼리 합칠 때
+  // 4. 배열인덱스에 접근
+  // 5. 전개연산자
+  // const fruits = ["apple", "banana"];
+  // const newFruit = "cherry";
+  // const allFruits = [...fruits, newFruit]; // 배열을 확장하여 새로운 원소 추가
+  // console.log(allFruits); // ["apple", "banana", "cherry"]
+
+// 40번 
