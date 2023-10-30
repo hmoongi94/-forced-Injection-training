@@ -297,3 +297,19 @@ function distinguishNumber(number){
   console.log(addressObject)
 
 // 35번 객체의 모든 속성을 순회하며 출력하는 코드를 작성하세요.
+  // const myObject = {
+  //   name: "John",
+  //   age: 30,
+  //   job: "Developer"
+  // };
+
+  // 1번째 방법
+  // for (let key in myObject) {
+  //   if (myObject.hasOwnProperty(key)) {
+  //     console.log(key + ": " + myObject[key]);
+  //   }
+  // }
+  // 2번째 방법  
+  // Object.keys(myObject).forEach(key => {
+  // console.log(key + ": " + myObject[key]);
+  // });
