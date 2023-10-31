@@ -360,10 +360,13 @@ function distinguishNumber(number){
   // console.log(fruits)
 
   // 2. filter(): 배열에서 특정 조건을 걸어 추가하거나 뺄 수 있다.
-  console.log(fruits.filter(fruit=>fruit!=="apple"))
+  // console.log(fruits.filter(fruit=>fruit!=="apple"))
 
   // 3. pop(): 배열의 끝에 있는 원소를 뽑아옴. 배열에서 삭제하면서 값을 가져올 수 있다.
   // console.log(fruits.pop())
 
   // 4. shift(): 배열의 처음에 있는 원소를 뽑아옴. 배열에서 삭제하면서 값을 가져올 수 있다.
   
+  // 5. slice(): 배열의 일부분을 선택할 수 있다.
+  // slice(start,end)  -> start,end 처음,끝의 인덱스를 지칭 근데 end 인덱스의 원소는 포함되지않음.
+  // console.log(fruits.slice(0,3))
