@@ -437,3 +437,8 @@ function distinguishNumber(number){
 
   // greet(); // "Hello, Guest!" 출력
   // greet('Alice'); // "Hello, Alice!" 출력
+
+// 50번. 비어있는 클래스를 선언하는 코드를 작성하세요.
+  // class EmptyClass {
+    // //클래스 내용이 비어있음
+  // }
