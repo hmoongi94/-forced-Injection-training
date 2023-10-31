@@ -359,4 +359,11 @@ function distinguishNumber(number){
   // fruits.splice(1,2,"사과")
   // console.log(fruits)
 
-  // 2. 
+  // 2. filter(): 배열에서 특정 조건을 걸어 추가하거나 뺄 수 있다.
+  console.log(fruits.filter(fruit=>fruit!=="apple"))
+
+  // 3. pop(): 배열의 끝에 있는 원소를 뽑아옴. 배열에서 삭제하면서 값을 가져올 수 있다.
+  // console.log(fruits.pop())
+
+  // 4. shift(): 배열의 처음에 있는 원소를 뽑아옴. 배열에서 삭제하면서 값을 가져올 수 있다.
+  
