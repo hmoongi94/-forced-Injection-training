@@ -442,3 +442,22 @@ function distinguishNumber(number){
   // class EmptyClass {
     // //클래스 내용이 비어있음
   // }
+
+// 51번. 생성자를 가진 클래스를 선언하는 코드를 작성하세요.
+  // class kdtmember {
+  //   constructor(name, age){
+  //     this.이름 = name
+  //     this.나이 = age
+  //   }
+  //   introduce(){
+  //     console.log(`안녕 나는 ${this.이름}이라 해. 나이는 ${this.나이}야.`)
+  //   }
+  // }
+
+  // const hong = new kdtmember("hongmoongi", 30)
+  // console.log(hong)
+  // hong.introduce()
+
+  // const yoon = new kdtmember("yoonjunhyun", 28)
+  // console.log(yoon)
+  // yoon.introduce()
