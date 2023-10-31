@@ -388,4 +388,11 @@ function distinguishNumber(number){
   //   console.log(fruit)
   // }
 
-// 43번.
+// 43번. 배열의 특정 원소의 인덱스를 찾는 코드를 작성하세요.
+  // 1.indexOf()-> 특정 원소가 없을 경우 -> '-1'을 반환한다.
+  // console.log(fruits.indexOf("apple"))
+
+  // 2. findIndex()-> 콜백함수로 조건을 설정해줌
+  // 단일매개변수만 받는다. 
+  // 틀린예제) console.log(fruits.findIndex(function(fruit,fruit2){fruit==="apple", fruit2 ==="cherry"}))
+  // 요약하면, indexOf()는 값을 기준으로 찾고, findIndex()는 함수(콜백)를 기준으로 찾습니다. findIndex()은 좀 더 유연하게 원하는 조건을 설정할 수 있으며, 값이 아닌 특정 조건을 기반으로 원소를 찾고자 할 때 유용합니다.
