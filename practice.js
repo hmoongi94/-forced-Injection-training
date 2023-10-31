@@ -409,6 +409,18 @@ function distinguishNumber(number){
 
   // 요약) 기본적으로 함수 표현식을 사용하면 변수 스코프 내에서만 함수에 접근할 수 있으므로 코드 더욱 모듈화되고 예측 가능해집니다. 함수 선언식은 호이스팅으로 인해 어떤 부분에서든 함수를 호출할 수 있지만 코드를 이해하기 어려울 수 있으므로 함수 표현식이 코드 구조를 더 명확하게 만들 수 있습니다.
   
-// 46번 화살표 함수를 사용해 두 수를 곱하는 함수를 선언하는 코드를 작성하세요.
+// 46번. 화살표 함수를 사용해 두 수를 곱하는 함수를 선언하는 코드를 작성하세요.
   // const multiply= (a,b)=>{console.log(a*b)}
   // 변수에 함수를 할당함.
+
+// 47번. 콜백함수를 사용하는 코드를 작성하세요.
+  // ex1)
+  // function performAction(callback) {
+  //   callback('Hello, World!');
+  // }
+
+  // performAction(function(param) {
+  //   console.log('콜백 함수 호출: ' + param);
+  // });
+  // ex2)
+ 
