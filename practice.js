@@ -370,3 +370,22 @@ function distinguishNumber(number){
   // 5. slice(): 배열의 일부분을 선택할 수 있다.
   // slice(start,end)  -> start,end 처음,끝의 인덱스를 지칭 근데 end 인덱스의 원소는 포함되지않음.
   // console.log(fruits.slice(0,3))
+
+// 41번. 배열의 길이를 확인하는 코드를 작성하세요.
+  // console.log(fruits.length)
+
+// 42번. 배열의 모든 원소를 순회하여 출력하는 코드를 작성하세요.
+  // 1. forEach사용
+  // fruits.forEach(function(currentValue, index, array){
+  //   console.log(currentValue, index, array)
+  // })
+  // currentValue: 현재 반복 중인 배열 요소의 값
+  // index: 현재 반복중인 배열요소의 인덱스 값
+  // array: `forEach()`가 호출된 배열 자체입니다.
+
+  // 2. for..of사용
+  // for(const fruit of fruits){
+  //   console.log(fruit)
+  // }
+
+// 43번.
