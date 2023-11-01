@@ -461,3 +461,5 @@ function distinguishNumber(number){
   // const yoon = new kdtmember("yoonjunhyun", 28)
   // console.log(yoon)
   // yoon.introduce()
+
+// 52번. 메서드를 가진 클래스를 선언하는 코드를 작성하세요.
