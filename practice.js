@@ -497,3 +497,5 @@ function distinguishNumber(number){
 
   const daejeon = new city("대전광역시", "서구", "둔산동")
   console.log(daejeon)
+  const seoul = new city("서울특별시", "강서구", "목동")
+  console.log(seoul.동)
