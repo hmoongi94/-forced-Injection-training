@@ -487,15 +487,19 @@ function distinguishNumber(number){
   }
  
   class city{
-    constructor(si, gu, dong ){
+    constructor(si, gu, dong, 집주소 ){
       this.시 = si
       this.구 = gu
       this.동 = dong
+      this.내집주소 = function (){
+        console.log(`문기의 ${집주소}`)
+      }
       
     }
   }
 
-  const daejeon = new city("대전광역시", "서구", "둔산동")
+  const daejeon = new city("대전광역시", "서구", "둔산동", "국화아파트 202동 1106호")
   console.log(daejeon)
-  const seoul = new city("서울특별시", "강서구", "목동")
+  const seoul = new city("서울특별시", "강서구", "목동","대원칸타빌 202동1106호")
   console.log(seoul.동)
+  seoul.내집주소()
