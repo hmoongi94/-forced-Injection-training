@@ -549,8 +549,19 @@ function distinguishNumber(number){
     get fahrenheit() {
       return (this.celsius * 9/5) + 32;
     }
+
+    set fahrenheit(value) {
+      this.celsius = (value - 32) * 5/9;
+    }
   }
 
-  const temp = new Temperature(20)
-  console.log(temp.celsius)
-  console.log(temp.fahrenheit)
+  // const temp = new Temperature(20)
+  // console.log(temp.celsius)
+  // console.log(temp.fahrenheit)
+
+  // temp.fahrenheit = 100
+  // console.log(temp.celsius)
+  
+  const temp2 = new Temperature()
+  temp2.fahrenheit = 100
+  console.log(temp2.celsius)
