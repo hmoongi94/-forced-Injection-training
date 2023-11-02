@@ -521,3 +521,20 @@ function distinguishNumber(number){
 // 53번. get과 set 접근자에 대해 설명하고 사용 예를 들어보세요.
   // get과 set은 JavaScript에서 객체의 속성에 접근하고 값을 설정하는 메커니즘입니다. 이를 통해 속성에 대한 읽기 및 쓰기 동작을 미세하게 제어할 수 있습니다. 
   // get은 속성 값을 읽을 때 호출되고, set은 속성 값을 설정할 때 호출됩니다.
+  
+  // get사용 예시)
+  class Circle {
+    constructor(radius) {
+      this.radius = radius;
+    }
+  
+    // 반지름 값을 읽을 때 호출되는 get 접근자
+    get ___radius() {
+      return this.radius;
+    }
+  }
+  
+  const myCircle = new Circle(5);
+  
+  // get 접근자를 사용하여 반지름 값 읽기
+  console.log(myCircle.___radius); // 출력: 5
