@@ -503,3 +503,17 @@ function distinguishNumber(number){
   const seoul = new city("서울특별시", "강서구", "목동","대원칸타빌 202동1106호")
   console.log(seoul.동)
   seoul.내집주소()
+
+  class city2{
+    constructor(si, gu, dong){
+      this.시 = si
+      this.구 = gu
+      this.동 = dong
+      this.내집주소 = function (func1,func2,func3){
+        return `${func1}에서 사는 ${func2} 라고 해. 만나서반가워. 내가하고싶은말은${func3}`
+      }      
+    }
+  }
+
+  const moongi = new city2("대전광역시","서구","만년동")
+  console.log(moongi.내집주소("오피스텔","홍문기","꺼져"))
