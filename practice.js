@@ -477,43 +477,47 @@ function distinguishNumber(number){
   // const person1 = new Person('Alice');
   // const person2 = new Person('Bob');
 
-  class calculator {
-    constructor(number1,number2){
-      this.add = function(number1,number2){
-        return number1+number2}
-      this.minus = function(number1,number2){
-        return number1-number2}
-     }
-  }
+  // class calculator {
+  //   constructor(number1,number2){
+  //     this.add = function(number1,number2){
+  //       return number1+number2}
+  //     this.minus = function(number1,number2){
+  //       return number1-number2}
+  //    }
+  // }
  
-  class city{
-    constructor(si, gu, dong, 집주소 ){
-      this.시 = si
-      this.구 = gu
-      this.동 = dong
-      this.내집주소 = function (){
-        console.log(`문기의 ${집주소}`)
-      }
+  // class city{
+  //   constructor(si, gu, dong, 집주소 ){
+  //     this.시 = si
+  //     this.구 = gu
+  //     this.동 = dong
+  //     this.내집주소 = function (){
+  //       console.log(`문기의 ${집주소}`)
+  //     }
       
-    }
-  }
+  //   }
+  // }
 
-  const daejeon = new city("대전광역시", "서구", "둔산동", "국화아파트 202동 1106호")
-  console.log(daejeon)
-  const seoul = new city("서울특별시", "강서구", "목동","대원칸타빌 202동1106호")
-  console.log(seoul.동)
-  seoul.내집주소()
+  // const daejeon = new city("대전광역시", "서구", "둔산동", "국화아파트 202동 1106호")
+  // console.log(daejeon)
+  // const seoul = new city("서울특별시", "강서구", "목동","대원칸타빌 202동1106호")
+  // console.log(seoul.동)
+  // seoul.내집주소()
 
-  class city2{
-    constructor(si, gu, dong){
-      this.시 = si
-      this.구 = gu
-      this.동 = dong
-      this.내집주소 = function (func1,func2,func3){
-        return `${func1}에서 사는 ${func2} 라고 해. 만나서반가워. 내가하고싶은말은${func3}`
-      }      
-    }
-  }
+  // class city2{
+  //   constructor(si, gu, dong){
+  //     this.시 = si
+  //     this.구 = gu
+  //     this.동 = dong
+  //     this.내집주소 = function (func1,func2,func3){
+  //       return `${func1}에서 사는 ${func2} 라고 해. 만나서반가워. 내가하고싶은말은${func3}`
+  //     }      
+  //   }
+  // }
 
-  const moongi = new city2("대전광역시","서구","만년동")
-  console.log(moongi.내집주소("오피스텔","홍문기","꺼져"))
+  // const moongi = new city2("대전광역시","서구","만년동")
+  // console.log(moongi.내집주소("오피스텔","홍문기","꺼져"))
+
+// 53번. get과 set 접근자에 대해 설명하고 사용 예를 들어보세요.
+  // get과 set은 JavaScript에서 객체의 속성에 접근하고 값을 설정하는 메커니즘입니다. 이를 통해 속성에 대한 읽기 및 쓰기 동작을 미세하게 제어할 수 있습니다. 
+  // get은 속성 값을 읽을 때 호출되고, set은 속성 값을 설정할 때 호출됩니다.
