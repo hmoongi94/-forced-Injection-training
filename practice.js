@@ -575,6 +575,11 @@ function distinguishNumber(number){
   // Html에서 모듈을 사용하려면 <script type="module">을 사용해야 된다.
   // esm방식
     // export "변수이름" or export "함수이름"
+    // export {"변수이름", "함수이름"}
     // import {"변수이름", "함수이름"} from 가져오는 모듈파일의경로/모듀파일이름
 
-  // cmjs방식
+  // cjs방식
+    // module.exports {"변수이름", "함수이름"}
+    // const {"변수이름". "함수이름"} 
+    // = require ("경로/모듈파일")
+    
