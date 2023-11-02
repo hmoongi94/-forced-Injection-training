@@ -582,4 +582,16 @@ function distinguishNumber(number){
     // module.exports {"변수이름", "함수이름"}
     // const {"변수이름". "함수이름"} 
     // = require ("경로/모듈파일")
-    
+
+// 56번. 모듈에서 함수를 하나 내보내는 코드를 작성하세요.
+// 57번. 모듈에서 함수를 임포트하는 코드를 작성하세요.
+
+// 58번. 모듈에서 여러개의 항목을 내보내는 코드를 작성하세요.
+  // 디스트럭쳐링 개념을 사용해 export {함수 or 변수} -> JavaScript에서 객체나 배열을 분해하고 원하는 값들을 추출하여 변수에 할당하는 기술입니다.
+
+  // const numbers = [1, 2, 3];
+  // const [first, second, third] = numbers;
+
+  // console.log(first);  // 출력: 1
+  // console.log(second); // 출력: 2
+  // console.log(third);  // 출력: 3
