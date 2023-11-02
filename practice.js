@@ -479,6 +479,10 @@ function distinguishNumber(number){
 
   class calculator {
     constructor(number1,number2){
-      
-    }
+      this.add = function(number1,number2){
+        return number1+number2}
+      this.minus = function(number1,number2){
+        return number1-number2}
+     }
   }
+ 
