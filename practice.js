@@ -540,28 +540,33 @@ function distinguishNumber(number){
   // console.log(myCircle.radius); // 출력: 5
   // console.log(myCircle.__radius); // 출력: 5
 
-  class Temperature {
-    constructor(celsius) {
-      this.celsius = celsius;
-    }
+  // class Temperature {
+  //   constructor(celsius) {
+  //     this.celsius = celsius;
+  //   }
   
-    // get 접근자를 사용하여 섭씨를 화씨로 변환
-    get fahrenheit() {
-      return (this.celsius * 9/5) + 32;
-    }
+  //   // get 접근자를 사용하여 섭씨를 화씨로 변환
+  //   get fahrenheit() {
+  //     return (this.celsius * 9/5) + 32;
+  //   }
 
-    set fahrenheit(value) {
-      this.celsius = (value - 32) * 5/9;
-    }
-  }
+  //   set fahrenheit(value) {
+  //     this.celsius = (value - 32) * 5/9;
+  //   }
+  // }
 
-  // const temp = new Temperature(20)
-  // console.log(temp.celsius)
-  // console.log(temp.fahrenheit)
+  // // const temp = new Temperature(20)
+  // // console.log(temp.celsius)
+  // // console.log(temp.fahrenheit)
 
-  // temp.fahrenheit = 100
-  // console.log(temp.celsius)
+  // // temp.fahrenheit = 100
+  // // console.log(temp.celsius)
   
-  const temp2 = new Temperature()
-  temp2.fahrenheit = 100
-  console.log(temp2.celsius)
+  // const temp2 = new Temperature()
+  // temp2.fahrenheit = 100
+  // console.log(temp2.celsius)
+
+// 54번. 클래스의 instance를 생성하는 코드를 작성하세요.
+  // 생성자 함수로 만들어진 것을 인스턴스라함.
+  // 생성자 함수로 여러개 만들었을 시 이름에 따라서
+  // 인스턴스 "", 인스턴스"" 식으로 부르면됨.
