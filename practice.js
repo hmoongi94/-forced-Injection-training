@@ -463,3 +463,22 @@ function distinguishNumber(number){
   // yoon.introduce()
 
 // 52번. 메서드를 가진 클래스를 선언하는 코드를 작성하세요.
+  // class Person {
+    // constructor(name) {
+      // this.name = name;
+    // }
+  // 
+    // sayHello() {
+      // console.log(`Hello, my name is ${this.name}.`);
+    // }
+  // }
+  // 
+  // //클래스 인스턴스 생성
+  // const person1 = new Person('Alice');
+  // const person2 = new Person('Bob');
+
+  class calculator {
+    constructor(number1,number2){
+      
+    }
+  }
