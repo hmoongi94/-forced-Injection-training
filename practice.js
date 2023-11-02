@@ -486,3 +486,14 @@ function distinguishNumber(number){
      }
   }
  
+  class city{
+    constructor(si, gu, dong ){
+      this.시 = si
+      this.구 = gu
+      this.동 = dong
+      
+    }
+  }
+
+  const daejeon = new city("대전광역시", "서구", "둔산동")
+  console.log(daejeon)
