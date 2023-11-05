@@ -256,4 +256,4 @@
       // console.error('Unhandled error:', error);
     // });
 
-    
+// 75번. proxy객체를 생성하는 코드를 작성해보세요.
