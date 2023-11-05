@@ -19,11 +19,29 @@
   // const person = JSON.parse(jsonString)
 
 //64번. Set 객체를 사용해 중복을 허용하지 않는 컬렉션을 생성하는 코드를 작성하세요.
-  const uniqueNumbers = new Set();
-  uniqueNumbers.add(5)
-  console.log(uniqueNumbers)
-  uniqueNumbers.add(10)
-  console.log(uniqueNumbers)
-  uniqueNumbers.add(5)
-  console.log(uniqueNumbers)
+  // const uniqueNumbers = new Set();
+  // uniqueNumbers.add(5)
+  // console.log(uniqueNumbers)
+  // uniqueNumbers.add(10)
+  // console.log(uniqueNumbers)
+  // uniqueNumbers.add(5)
+  // console.log(uniqueNumbers)
 
+//65번. Map객체를 사용해 키-값 쌍의 컬렉션을 생성하는 코드를 작성하세요.
+  // 빈 Map 객체 생성
+  const personInfo = new Map();
+
+  // 키-값 쌍 추가
+  personInfo.set('firstName', 'John');
+  personInfo.set('firstName', 'hong')
+  personInfo.set('lastName', 'Doe');
+  personInfo.set('age', 30);
+
+  // Map 객체 내용 확인
+  console.log(personInfo);
+  // 특정 키를 사용하여 값을 가져오기
+  const firstName = personInfo.get('firstName');
+  console.log(firstName);
+  // Map 객체에서 키-값 쌍 제거
+  personInfo.delete('age');
+  console.log(personInfo);
