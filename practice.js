@@ -178,48 +178,80 @@
 
 //73. promise.all을 사용해 여러 promise를 동시에 실행하는 코드를 작성해보세요.
 
-  function fetchUserData(userId) {
-    return new Promise((resolve, reject) => {
-      // 비동기 작업 시뮬레이션 (예: 네트워크 요청)
-      setTimeout(() => {
-        resolve(`User data for ID ${userId}`);
-      }, 1000);
-    });
-  }
+  // function fetchUserData(userId) {
+  //   return new Promise((resolve, reject) => {
+  //     // 비동기 작업 시뮬레이션 (예: 네트워크 요청)
+  //     setTimeout(() => {
+  //       resolve(`User data for ID ${userId}`);
+  //     }, 1000);
+  //   });
+  // }
+
+  // function fetchUserPosts(userId) {
+  //   return new Promise((resolve, reject) => {
+  //     // 비동기 작업 시뮬레이션 (예: 데이터베이스 쿼리)
+  //     setTimeout(() => {
+  //       resolve(`Posts for User ID ${userId}`);
+  //     }, 1500);
+  //   });
+  // }
+
+  // function fetchUserComments(userId) {
+  //   return new Promise((resolve, reject) => {
+  //     // 비동기 작업 시뮬레이션
+  //     setTimeout(() => {
+  //       resolve(`Comments for User ID ${userId}`);
+  //     }, 800);
+  //   });
+  // }
+
+  // const userId = 123;
+
+  // // Promise.all을 사용하여 여러 Promise를 동시에 실행
+  // Promise.all([
+  //   fetchUserData(userId),
+  //   fetchUserPosts(userId),
+  //   fetchUserComments(userId)
+  // ])
+  //   .then((results) => {
+  //     // 모든 Promise가 완료되었을 때 결과를 처리
+  //     const [userData, userPosts, userComments] = results;
+  //     console.log(userData);
+  //     console.log(userPosts);
+  //     console.log(userComments);
+  //   })
+  //   .catch((error) => {
+  //     console.error('Error:', error);
+  //   });
+
+// 74번. 비동기 함수에서 예외를 처리하는 방법을 설명하고 예를 들어보세요.
+  // async function fetchData() {
+    // try {
+      // const response = await fetch('https://example.com/api/data');
+      // 
+      // if (!response.ok) {
+        // throw new Error('Failed to fetch data');
+      // }
+      // 
+      // const data = await response.json();
+      // 
+      // return data;
+    // } catch (error) {
+      // console.error('An error occurred:', error);
+      // return null;
+    // }
+  // }
+  // 
   
-  function fetchUserPosts(userId) {
-    return new Promise((resolve, reject) => {
-      // 비동기 작업 시뮬레이션 (예: 데이터베이스 쿼리)
-      setTimeout(() => {
-        resolve(`Posts for User ID ${userId}`);
-      }, 1500);
-    });
-  }
-  
-  function fetchUserComments(userId) {
-    return new Promise((resolve, reject) => {
-      // 비동기 작업 시뮬레이션
-      setTimeout(() => {
-        resolve(`Comments for User ID ${userId}`);
-      }, 800);
-    });
-  }
-  
-  const userId = 123;
-  
-  // Promise.all을 사용하여 여러 Promise를 동시에 실행
-  Promise.all([
-    fetchUserData(userId),
-    fetchUserPosts(userId),
-    fetchUserComments(userId)
-  ])
-    .then((results) => {
-      // 모든 Promise가 완료되었을 때 결과를 처리
-      const [userData, userPosts, userComments] = results;
-      console.log(userData);
-      console.log(userPosts);
-      console.log(userComments);
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
+  // //fetchData 함수 호출
+  // fetchData()
+    // .then((data) => {
+      // if (data) {
+        // console.log('Data:', data);
+      // } else {
+        // console.log('No data available.');
+      // }
+    // })
+    // .catch((error) => {
+      // console.error('Unhandled error:', error);
+    // });
