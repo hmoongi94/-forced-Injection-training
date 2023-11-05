@@ -17,3 +17,13 @@
 
 //63번. Json객체를 사용해 JSON 문자열을 객체로 변환하는 코드를 작성하세요.
   // const person = JSON.parse(jsonString)
+
+//64번. Set 객체를 사용해 중복을 허용하지 않는 컬렉션을 생성하는 코드를 작성하세요.
+  const uniqueNumbers = new Set();
+  uniqueNumbers.add(5)
+  console.log(uniqueNumbers)
+  uniqueNumbers.add(10)
+  console.log(uniqueNumbers)
+  uniqueNumbers.add(5)
+  console.log(uniqueNumbers)
+
