@@ -242,7 +242,7 @@
     // }
   // }
   // 
-  
+
   // //fetchData 함수 호출
   // fetchData()
     // .then((data) => {
@@ -255,3 +255,5 @@
     // .catch((error) => {
       // console.error('Unhandled error:', error);
     // });
+
+    
