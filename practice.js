@@ -90,8 +90,51 @@
                 //     });
                 
                 
-  //69번. promise가 해결(fullfilled,resolved)되거나 거부된 경우를 제작하세요.
+//69번. promise가 해결(fullfilled,resolved)되거나 거부된 경우를 제작하세요.
 
   // pending: 초기 상태, 아직 결과가 결정되지 않음.
   // fulfilled (또는 resolved): resolve 함수가 호출되고 해당 함수에 전달된 값이 성공적으로 처리될 때 발생합니다. 이 값은 .then() 메서드에 전달된 콜백 함수의 인자로 전달됩니다.
   // rejected: reject 함수가 호출되고 해당 함수에 전달된 값이 실패할 때 발생합니다. 이 값은 .catch() 메서드에 전달된 콜백 함수의 인자로 전달됩니다.
+
+//70번. javaScript에서 프로미스 체인을 구현하는 코드를 작성해보세요.
+  // function asyncTask1() {
+    // return new Promise((resolve, reject) => {
+      // setTimeout(() => {
+        // resolve('Task 1 completed');
+      // }, 1000);
+    // });
+  // }
+  // 
+  // function asyncTask2() {
+    // return new Promise((resolve, reject) => {
+      // setTimeout(() => {
+        // resolve('Task 2 completed');
+      // }, 1500);
+    // });
+  // }
+  // 
+  // function asyncTask3() {
+    // return new Promise((resolve, reject) => {
+      // setTimeout(() => {
+        // resolve('Task 3 completed');
+      // }, 500);
+    // });
+  // }
+  // 
+  // //프로미스 체인 구현
+  // asyncTask1()
+    // .then((result) => {
+      // console.log(result);
+      // return asyncTask2();
+    // })
+    // .then((result) => {
+      // console.log(result);
+      // return asyncTask3();
+    // })
+    // .then((result) => {
+      // console.log(result);
+      // console.log('All tasks completed');
+    // })
+    // .catch((error) => {
+      // console.error('Error:', error);
+    // });
