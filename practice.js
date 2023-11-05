@@ -14,3 +14,6 @@
   // JavaScript 객체를 JSON 문자열로 변환
     // const jsonString = JSON.stringify(person);
     // console.log(jsonString);
+
+//63번. Json객체를 사용해 JSON 문자열을 객체로 변환하는 코드를 작성하세요.
+  // const person = JSON.parse(jsonString)
