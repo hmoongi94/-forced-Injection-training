@@ -64,3 +64,26 @@
   // setTimeout(function() {
     // console.log('Hello, World!');
   // }, 1000); // 1000 밀리초 (1초) 후에 함수를 실행
+
+//68번. promise를 선언하고 사용하는 코드를 작성하세요.
+  // // Promise 생성
+  //   const myPromise = new Promise((resolve, reject) => {
+  //     // 비동기 작업을 수행
+  //     setTimeout(() => {
+  //       const randomNumber = Math.random();
+  //       if (randomNumber < 0.5) {
+  //         resolve(`Success: ${randomNumber}`);
+  //       } else {
+  //         reject(`Error: ${randomNumber}`);
+  //       }
+  //     }, 1000);
+  //   });
+
+  // // Promise 사용
+  //   myPromise
+  //     .then((result) => {
+  //       console.log(result); // 성공적으로 해결될 경우 실행
+  //     })
+  //     .catch((error) => {
+  //       console.error(error); // 실패 또는 오류 발생 시 실행
+  //     });
