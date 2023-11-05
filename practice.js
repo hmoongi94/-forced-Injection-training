@@ -66,28 +66,32 @@
     // }, 1000); // 1000 밀리초 (1초) 후에 함수를 실행
     
     //68번. promise를 선언하고 사용하는 코드를 작성하세요.
-    //69번. promise가 해결(fullfilled,resolved)되거나 거부된 경우를 제작하세요.
-  // // Promise 생성
-  //   const myPromise = new Promise((resolve, reject) => {
-  //     // 비동기 작업을 수행
-  //     setTimeout(() => {
-  //       const randomNumber = Math.random();
-  //       if (randomNumber < 0.5) {
-  //         resolve(`Success: ${randomNumber}`); //fullfilled상태
-  
-  //       } else {
-  //         reject(`Error: ${randomNumber}`); // rejected 상태 
-  //       }
-  //     }, 1000);
-  //   });
+    // // Promise 생성
+    //   const myPromise = new Promise((resolve, reject) => {
+      //     // 비동기 작업을 수행
+      //     setTimeout(() => {
+        //       const randomNumber = Math.random();
+        //       if (randomNumber < 0.5) {
+          //         resolve(`Success: ${randomNumber}`); //fullfilled상태
+          
+          //       } else {
+            //         reject(`Error: ${randomNumber}`); // rejected 상태 
+            //       }
+            //     }, 1000);
+            //   });
+            
+            // // Promise 사용
+            //   myPromise
+            //     .then((result) => {
+              //       console.log(result); // 성공적으로 해결될 경우 실행 //fullfilled상태일 때 실행됨.
+              //     })
+              //     .catch((error) => {
+                //       console.error(error); // 실패 또는 오류 발생 시 실행 // rejected 상태일 때 실행됨.
+                //     });
+                
+                
+  //69번. promise가 해결(fullfilled,resolved)되거나 거부된 경우를 제작하세요.
 
-  // // Promise 사용
-  //   myPromise
-  //     .then((result) => {
-  //       console.log(result); // 성공적으로 해결될 경우 실행 //fullfilled상태일 때 실행됨.
-  //     })
-  //     .catch((error) => {
-  //       console.error(error); // 실패 또는 오류 발생 시 실행 // rejected 상태일 때 실행됨.
-  //     });
-
-  
+  // pending: 초기 상태, 아직 결과가 결정되지 않음.
+  // fulfilled (또는 resolved): resolve 함수가 호출되고 해당 함수에 전달된 값이 성공적으로 처리될 때 발생합니다. 이 값은 .then() 메서드에 전달된 콜백 함수의 인자로 전달됩니다.
+  // rejected: reject 함수가 호출되고 해당 함수에 전달된 값이 실패할 때 발생합니다. 이 값은 .catch() 메서드에 전달된 콜백 함수의 인자로 전달됩니다.
