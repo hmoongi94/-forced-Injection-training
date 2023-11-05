@@ -28,20 +28,34 @@
   // console.log(uniqueNumbers)
 
 //65번. Map객체를 사용해 키-값 쌍의 컬렉션을 생성하는 코드를 작성하세요.
-  // 빈 Map 객체 생성
-  const personInfo = new Map();
+  // // 빈 Map 객체 생성
+  // const personInfo = new Map();
 
-  // 키-값 쌍 추가
-  personInfo.set('firstName', 'John');
-  personInfo.set('firstName', 'hong')
-  personInfo.set('lastName', 'Doe');
-  personInfo.set('age', 30);
+  // // 키-값 쌍 추가
+  // personInfo.set('firstName', 'John');
+  // personInfo.set('firstName', 'hong')
+  // personInfo.set('lastName', 'Doe');
+  // personInfo.set('age', 30);
 
-  // Map 객체 내용 확인
-  console.log(personInfo);
-  // 특정 키를 사용하여 값을 가져오기
-  const firstName = personInfo.get('firstName');
-  console.log(firstName);
-  // Map 객체에서 키-값 쌍 제거
-  personInfo.delete('age');
-  console.log(personInfo);
+  // // Map 객체 내용 확인
+  // console.log(personInfo);
+  // // 특정 키를 사용하여 값을 가져오기
+  // const firstName = personInfo.get('firstName');
+  // console.log(firstName);
+  // // Map 객체에서 키-값 쌍 제거
+  // personInfo.delete('age');
+  // console.log(personInfo);
+
+//66번. 동기와 비동기에 대해 비유를 들어 차이점을 설명하세요.
+
+  // 비유: 레스토랑에서 주문하기
+  // 
+  // 동기 (Synchronous):
+  // 상황: 레스토랑에서 주문한 음식을 기다리는 고객
+  // 설명: 고객은 주문한 음식을 주문하는 즉시 기다려야 합니다. 주문한 음식이 준비될 때까지 다른 일을 하거나 대화를 나누기 어려워요. 음식이 나오기 전까지 대기해야 합니다. 이것이 동기적인 동작과 유사합니다.
+  // 
+  // 비동기 (Asynchronous):
+  // 상황: 레스토랑에서 주문하고 나서 다른 고객과 대화하거나 책을 읽는 고객
+  // 설명: 고객은 주문을 한 후에 주문한 음식이 준비될 때까지 다른 일을 할 수 있습니다. 주문한 음식이 준비되면 고객에게 알림이 오고 음식을 수령합니다. 고객은 주문한 작업(음식 준비)이 완료될 때까지 다른 작업을 수행할 수 있으며, 이것이 비동기적인 동작과 유사합니다.
+  // 
+  // 비동기 프로그래밍은 일반적으로 네트워크 요청, 파일 읽기/쓰기, 타이머 이벤트 등과 같은 작업을 다룰 때 유용하며, 애플리케이션의 응답성을 향상시키고 블로킹을 피하기 위해 사용됩니다.
