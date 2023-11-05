@@ -175,3 +175,51 @@
   // async/await: async 함수는 비동기 작업이 완료되면 해당 값을 반환하므로 동기적인 방식으로 값을 다루는 것처럼 보입니다.
 
   // 보편적으로, async/await는 비동기 코드를 더 읽기 쉽고 관리하기 쉽게 만들며, 에러 처리와 코드 구조를 개선하는 데 도움이 됩니다. 그러나 async/await를 사용할 수 없는 환경에서나 기존 코드와 통합할 때 Promise도 여전히 유용할 수 있습니다.
+
+//73. promise.all을 사용해 여러 promise를 동시에 실행하는 코드를 작성해보세요.
+
+  function fetchUserData(userId) {
+    return new Promise((resolve, reject) => {
+      // 비동기 작업 시뮬레이션 (예: 네트워크 요청)
+      setTimeout(() => {
+        resolve(`User data for ID ${userId}`);
+      }, 1000);
+    });
+  }
+  
+  function fetchUserPosts(userId) {
+    return new Promise((resolve, reject) => {
+      // 비동기 작업 시뮬레이션 (예: 데이터베이스 쿼리)
+      setTimeout(() => {
+        resolve(`Posts for User ID ${userId}`);
+      }, 1500);
+    });
+  }
+  
+  function fetchUserComments(userId) {
+    return new Promise((resolve, reject) => {
+      // 비동기 작업 시뮬레이션
+      setTimeout(() => {
+        resolve(`Comments for User ID ${userId}`);
+      }, 800);
+    });
+  }
+  
+  const userId = 123;
+  
+  // Promise.all을 사용하여 여러 Promise를 동시에 실행
+  Promise.all([
+    fetchUserData(userId),
+    fetchUserPosts(userId),
+    fetchUserComments(userId)
+  ])
+    .then((results) => {
+      // 모든 Promise가 완료되었을 때 결과를 처리
+      const [userData, userPosts, userComments] = results;
+      console.log(userData);
+      console.log(userPosts);
+      console.log(userComments);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
