@@ -63,18 +63,20 @@
 //67번. setTimeout을 사용해 1초 후에 ' hello,world!'를 출력하는 코들르 작성하세요.
   // setTimeout(function() {
     // console.log('Hello, World!');
-  // }, 1000); // 1000 밀리초 (1초) 후에 함수를 실행
-
-//68번. promise를 선언하고 사용하는 코드를 작성하세요.
+    // }, 1000); // 1000 밀리초 (1초) 후에 함수를 실행
+    
+    //68번. promise를 선언하고 사용하는 코드를 작성하세요.
+    //69번. promise가 해결(fullfilled,resolved)되거나 거부된 경우를 제작하세요.
   // // Promise 생성
   //   const myPromise = new Promise((resolve, reject) => {
   //     // 비동기 작업을 수행
   //     setTimeout(() => {
   //       const randomNumber = Math.random();
   //       if (randomNumber < 0.5) {
-  //         resolve(`Success: ${randomNumber}`);
+  //         resolve(`Success: ${randomNumber}`); //fullfilled상태
+  
   //       } else {
-  //         reject(`Error: ${randomNumber}`);
+  //         reject(`Error: ${randomNumber}`); // rejected 상태 
   //       }
   //     }, 1000);
   //   });
@@ -82,8 +84,10 @@
   // // Promise 사용
   //   myPromise
   //     .then((result) => {
-  //       console.log(result); // 성공적으로 해결될 경우 실행
+  //       console.log(result); // 성공적으로 해결될 경우 실행 //fullfilled상태일 때 실행됨.
   //     })
   //     .catch((error) => {
-  //       console.error(error); // 실패 또는 오류 발생 시 실행
+  //       console.error(error); // 실패 또는 오류 발생 시 실행 // rejected 상태일 때 실행됨.
   //     });
+
+  
