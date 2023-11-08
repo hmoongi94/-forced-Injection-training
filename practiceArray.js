@@ -94,39 +94,49 @@ const testArray2 = ["안녕","나는", "새로온 학생이야"]
 // ? 12. 배열에서 지정된 요소를 뒤에서부터 찾고, 그 인덱스를 반환하는 메서드는 무엇인가요?
   // * lastIndexOf()메서드: 
   // * 중복된 값이 있을 경우: 처음으로 발견한 위치를 알려주는데 뒤에서부터 찾기 시작하므로 배열에서는 뒤쪽에 있는 배열을 알려줌?
-
+  
   // const numbers = [ 1,2,3,4,5,6,7,8,9,5,4,3,2,3,4,5,6]
   // console.log(numbers.indexOf(4))
   // console.log(numbers.lastIndexOf(4,[13]))
-
-// ? 13. 주어진 테스트 함수를 만족하는 배열의 첫 번째 요소의 값을 반환하는 메서드는 무엇인가요?
+  
+  // ? 13. 주어진 테스트 함수를 만족하는 배열의 첫 번째 요소의 값을 반환하는 메서드는 무엇인가요?
   //* find()메서드: array.find(callback(element[,index[,array]])[,thisArg])
   //* find()메서드는 콜백함수로 찾는 값을 함수로 정의한다.
   //* 하지만 간단하게 원하는 값을 찾으려면
   //* const foundValue = numbers.find(element => element === targetValue);
   //* 이런식으로 간단하게 요소조건을 추가한다.
-  // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-  // const isEven = (element) => element % 2 === 0;
-  // const findOptions = {
-  //   thisArg: null, // `this`로 사용할 값 (null로 설정)
-  // };
+  //? 14. 주어진 테스트 함수를 만족하는 배열의 첫 번째 요소에 대한 인덱스를 반환하는 메서드는 무엇인가요?
+  //* findIndex()메서드: find()메서드는 원하는 조건의 배열의 값이 나오고 findIndex는 배열의 인덱스가 나옴.
 
-  // const firstEvenIndex = numbers.find(
-  // function (element, index, array) {
-  //   // `this`를 사용하려면 `findOptions`에 `thisArg` 값을 설정해야 함
-  //   console.log(`현재 요소: ${element}`);
-  //   console.log(`현재 요소의 인덱스: ${index}`);
-  //   console.log(`배열 전체: ${array}`);
-  //     if (this === null) {
-  //       console.log('`this` is null');
-  //     }
+  //? 15. 테스트 함수를 통과하는 모든 요소를 모아 새 배열로 반환하는 메서드는 무엇인가요?
+  //* filter()메서드 조건의 모든 요소들을 모아 새 배열로 만듬.
+
+  //? 16. 
+  
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+  const isEven = (element) => element % 2 === 0;
+  const findOptions = {
+    thisArg: null, // `this`로 사용할 값 (null로 설정)
+  };
+
+  const firstEvenIndex = numbers.filter(
+  function (element, index, array) {
+    // `this`를 사용하려면 `findOptions`에 `thisArg` 값을 설정해야 함
+    // console.log(`현재 요소: ${element}`);
+    // console.log(`현재 요소의 인덱스: ${index}`);
+    // console.log(`배열 전체: ${array}`);
+      if (this === null) {
+        console.log('`this` is null');
+      }
     
-  //     // 테스트 함수: 짝수를 찾아 첫 번째 짝수의 인덱스 반환
-  //     return isEven(element);
-  //   },
-  //   findOptions
-  // );
+      // 테스트 함수: 짝수를 찾아 첫 번째 짝수의 인덱스 반환
+      return isEven(element);
+    },
+    findOptions
+  );
 
-  // console.log(firstEvenIndex); // 1 (첫 번째 짝수의 인덱스)
+  console.log(numbers)
+  console.log(firstEvenIndex); // 1 (첫 번째 짝수의 인덱스)
   
