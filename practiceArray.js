@@ -14,6 +14,8 @@ const testArray2 = ["안녕","나는", "새로온 학생이야"]
 // * reverse(): 배열을 반환-> 원래배열 바뀜
 // * sort(): 배열을 정렬-> 원래배열 바뀜
 
+// * indexOf(searchElement,[fromIndex]): 배열에서 요소의 인덱스 값을 구한다. 배열의 요소가 없는 경우 -1을 반환한다.
+
 // ? 1. 배열의 끝에 하나 이상의 요소를 추가하고, 배열의 새 길이를 반환하는 메서드는 무엇인가요?
   //* push메서드: 배열의 끝에 요소추가하고 길이를 알려줌.
   //* 스프레드연산자("...")
@@ -79,3 +81,17 @@ const testArray2 = ["안녕","나는", "새로온 학생이야"]
   // const korean = ['막','방','강','나','라','다']
 
   // console.log(korean.sort())
+
+// ? 11. 배열에서 지정된 요소를 찾고, 그 인덱스를 반환하는 메서드는 무엇인가요?
+  //* indexOf()메서드: array.indexOf(searchElement[fromIndex])
+  //* searchElement[,fromIndex]는 옵션사항이며 어디부터 검색할것인지 설정할 수 있다. 기본값은 0이다.
+  //* 중복된 값이 있을 경우: 첫번째로 발견한 위치를 알려줌
+  // console.log(testArray.indexOf('나는'[5]))
+
+// ? 12. 배열에서 지정된 요소를 뒤에서부터 찾고, 그 인덱스를 반환하는 메서드는 무엇인가요?
+  // * lastIndexOf()메서드: 
+  // * 중복된 값이 있을 경우: 처음으로 발견한 위치를 알려주는데 뒤에서부터 찾기 시작하므로 배열에서는 뒤쪽에 있는 배열을 알려줌?
+
+  const numbers = [ 1,2,3,4,5,6,7,8,9,5,4,3,2,3,4,5,6]
+  console.log(numbers.indexOf(4))
+  console.log(numbers.lastIndexOf(4,[13]))
