@@ -1,4 +1,4 @@
-const testArray = ["안녕", "나는", "홍문기야","좀더", "긴","배열"]
+const testArray = ["안녕", "나는", "홍문기야","좀더", "긴","배열",1,2,3,4,5]
 const testArray2 = ["안녕","나는", "새로온 학생이야"]
 
 // * 삭제: pop(마지막요소에 삭제) <-> shift(첫번째요소)
@@ -56,7 +56,11 @@ const testArray2 = ["안녕","나는", "새로온 학생이야"]
 // ? 8. 배열의 모든 요소를 연결해 하나의 문자열로 만드는 메서드는 무엇인가요?
   // * join메서드: join(separator)
   // * separator은 붙이는데 사용하는 옵션임.
+  // * testArray.join()은 testArray.join(",")인게 기본값임.
+  // * path.join()에서 쓰는 join()메서드랑 array.join()메서드랑은 완전히 다른 메서드다.
   
-  console.log(testArray.join(" "))
-  console.log(testArray.join())
-  
+  // console.log(testArray.join("&"))
+  // console.log(testArray.join(","))
+
+// ? 9. 배열의 순서를 반전시키는 메서드는 무엇인가요?
+  // * 
