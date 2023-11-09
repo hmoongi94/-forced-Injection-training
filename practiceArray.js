@@ -120,14 +120,18 @@ const testArray2 = ["안녕","나는", "새로온 학생이야"]
 
   //? 16. 배열 내의 모든 요소 각각에 대하여 주어진 함수를 호출한 결과를 모아 새 배열로 반환하는 메서드는 무엇인가요?
   //* map(callback)메서드: 배열을 조건에 따라서 바꾸어줄 수 있다.
-  const numbers=[1,2,3,4,5,6,7,8,9]
-  const squaredNumbers = numbers.map((element,index)=>{
-    if(index>=2){
-    return element*element
-  }
-  return element
-  })
-  console.log(squaredNumbers)
+
+  // const numbers=[1,2,3,4,5,6,7,8,9]
+  // const squaredNumbers = numbers.map((element,index)=>{
+  //   if(index>=2){
+  //   return element*element
+  // }
+  // return element
+  // })
+  // console.log(squaredNumbers)
+
+  //? 17. 배열의 각 요소에 대해 주어진 함수를 실행하는 메서드는 무엇인가요?
+  //*forEach()메서드는 값을 반환하지 않고 그 요소가 실행될 때 어떤 동작을 수행하려고 사용함. 조건에 맞는 배열을 뽑고 싶으면 filter()를 사용.
   
 
   //* 13~15번 테스트
