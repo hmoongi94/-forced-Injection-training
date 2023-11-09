@@ -35,6 +35,9 @@ const testNumbers = [1,2,3,4,5,6,7,8,9]
 
 //* includes()메서드는 특정 요소가 있는지 판별할 때 사용 반환값은 true, false로 반환한다.
 
+//* flatMap()메서드: 평탄화한다는 말은 하나의 배열로 만든다는 말. map과 flatMap을 비교해보면 차이를 이해하는데 도움이 된다.
+//* flat()
+
 
 
 // ? 1. 배열의 끝에 하나 이상의 요소를 추가하고, 배열의 새 길이를 반환하는 메서드는 무엇인가요?
@@ -211,8 +214,19 @@ const testNumbers = [1,2,3,4,5,6,7,8,9]
   // console.log(hasOrange); // false
 
   //? 23. 먼저 주어진 함수를 배열의 각 요소에 매핑한 다음 결과를 새 배열로 평탄화하는 메서드는 무엇인가요?
-  //* flatMap()메서드: 
+  //* flatMap()메서드: 평탄화한다는 말은 하나의 배열로 만든다는 말.
+  //* map과 비교해보면 이해하는데 도움이 된다.
+  const words = ['Hello', 'World'];
 
+  const flattenedLetters = words.flatMap(word => word.split(''));
+  const mappingLetters = words.map(word=> word.split(''))
+  
+  console.log(flattenedLetters)
+  console.log(mappingLetters)
+
+
+  //? 24. 지정된 깊이까지 재귀적으로 평탄화하여 새 배열을 생성하는 메서드는 무엇인가요?
+  //* flat()메서드
 
   //* 13~15번 테스트
   // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
