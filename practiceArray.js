@@ -185,6 +185,14 @@ const testNumbers = [1,2,3,4,5,6,7,8,9]
 
   // console.log(sum); 
 
+  //? 21. reduce()와 같지만 배열의 끝에서부터 함수를 적용하는 메서드는?
+  //* reduceRight()메서드: 배열의 끝에서부터 reduce함수 적용
+
+  // const words = ['World', 'Hello', ''];
+
+  // const greeting = words.reduceRight((accumulator, word) => accumulator + ' ' + word);
+
+  // console.log(greeting); 
 
 
   //* 13~15번 테스트
