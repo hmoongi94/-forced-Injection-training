@@ -166,11 +166,26 @@ const testNumbers = [1,2,3,4,5,6,7,8,9]
   //   return element==="안녕"
   // }))
 
-  const even = [2,4,6,8]
-  const arealleven = even.every((element)=>{
-    return element%2 ===0
-  })
-  console.log(arealleven)
+  // const even = [2,4,6,8]
+  // const arealleven = even.every((element)=>{
+  //   return element%2 ===0
+  // })
+  // console.log(arealleven)
+
+  //? 20. 배열의 각 요소에 대해 주어진 리듀서(reducer)함수를 실행하고 하나의 결과값을 반환하는 메서드는 무엇인가요?
+  //* reduce(callback)메서드 또한 수학적인 용도로 사용하는 메서드같다.
+  //* callback(accumulator,element,initialvalue) 
+  //* accumulator는 누적된 값.
+  //* element는 현재 값을 순회함.
+  //* initialvalue는 초기값. 
+
+  // const numbers = [1, 2, 3, 4, 5];
+
+  // const sum = numbers.reduce((accumulator, element) => accumulator*3+element, 0);
+
+  // console.log(sum); 
+
+
 
   //* 13~15번 테스트
   // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
