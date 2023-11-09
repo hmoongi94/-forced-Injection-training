@@ -26,6 +26,9 @@ const testNumbers = [1,2,3,4,5,6,7,8,9]
 //* forEach()는 배열의 요소마다 일일히 함수를 실행시킬 뿐이지. 값을 반환하지는 않는다.
 
 //*some()메서드는 조건에 맞는것이 있는지 찾는다. true, false로 반환. return을 주지 않을시 false를 반환하므로 주의.
+//*every()메서드랑 some()메서드를 구분하자
+//*every()는 모두 조건이 맞아야지 true, some()은 하나만 맞아도 true
+//*마찬가지로 return을 반환해줘야 true값을 반환함. return값이 없으면 undefined로 false를 반환한다.
 
 
 
@@ -150,10 +153,24 @@ const testNumbers = [1,2,3,4,5,6,7,8,9]
   //? 18. 배열의 어떤 요소라도 주어진 테스트 함수를 통과하는지 테스트하는 메서드는 무엇인가요?
   //* some()메서드: 조건을 만족하면 true반환, 아닐시 false반환
   //* return을 안주면 값을 false로 반환한다.
-  console.log(testNumbers.some((element)=>{
-    return element%5 === 0
-  }))
+  // console.log(testArray.some((element)=>{
+  //   return element=== "안녕"
+  // }))
   
+  //? 19. 배열의 모든 요소가 주어진 테스트 함수를 통과하는지 테스트하는 메서드는 무엇인가요?
+  //* every():조건이 모두 만족해야지 true, 하나라도 틀리면 false
+  //* some()과 구분하자.
+  //* 숫자들 조건을 할 때 많이 쓸 것 같다.
+
+  // console.log(testArray.every((element)=>{
+  //   return element==="안녕"
+  // }))
+
+  const even = [2,4,6,8]
+  const arealleven = even.every((element)=>{
+    return element%2 ===0
+  })
+  console.log(arealleven)
 
   //* 13~15번 테스트
   // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
