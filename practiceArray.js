@@ -33,6 +33,8 @@ const testNumbers = [1,2,3,4,5,6,7,8,9]
 //* reduce()와 reduceRight(): 숫자적인 측면에서 축적된 값에 더 한다고만 생각했는데 문자열에서도 충분히 활용가능한 메서드 같다.
 //* 축적된 값에 계속 더 해줄 수 있다. 
 
+//* includes()메서드는 특정 요소가 있는지 판별할 때 사용 반환값은 true, false로 반환한다.
+
 
 
 // ? 1. 배열의 끝에 하나 이상의 요소를 추가하고, 배열의 새 길이를 반환하는 메서드는 무엇인가요?
@@ -196,6 +198,19 @@ const testNumbers = [1,2,3,4,5,6,7,8,9]
   // const greeting = words.reduceRight((accumulator, word) => accumulator + ' ' + word);
 
   // console.log(greeting); 
+
+  //? 22. 배열이 특정 요소를 포함하고 있는지 판별하는 메서드는 무엇인가요?
+  //* includes()메서드: 특정요소를 포함하고 있는지아닌지를 true, false로 반환한다.
+
+  // const fruits = ['사과', '바나나', '딸기'];
+
+  // const hasBanana = fruits.includes('바나나');
+  // console.log(hasBanana); // true
+
+  // const hasOrange = fruits.includes('오렌지');
+  // console.log(hasOrange); // false
+
+  //? 23. 먼저 주어진 함수를 배열의 각 요소에 매핑한 다음 결과를 새 배열로 평탄화하는 메서드는 무엇인가요?
 
 
   //* 13~15번 테스트
