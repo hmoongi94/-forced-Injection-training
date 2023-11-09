@@ -110,33 +110,45 @@ const testArray2 = ["안녕","나는", "새로온 학생이야"]
   //* findIndex()메서드: find()메서드는 원하는 조건의 배열의 값이 나오고 findIndex는 배열의 인덱스가 나옴.
 
   //? 15. 테스트 함수를 통과하는 모든 요소를 모아 새 배열로 반환하는 메서드는 무엇인가요?
-  //* filter()메서드 조건의 모든 요소들을 모아 새 배열로 만듬.
+  //* filter()메서드: 조건의 모든 요소들을 모아 새 배열로 만듬.
 
-  //? 16. 
+  //? 16. 배열 내의 모든 요소 각각에 대하여 주어진 함수를 호출한 결과를 모아 새 배열로 반환하는 메서드는 무엇인가요?
+  //* map(callback)메서드: 배열을 조건에 따라서 바꾸어줄 수 있다.
+
+  const numbers=[1,2,3,4,5,6,7,8,9]
+  const squaredNumbers = numbers.map((element,index)=>{
+    if(index>=2){
+    return element*element
+  }
+  return element
+  })
+  console.log(squaredNumbers)
   
-  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-  const isEven = (element) => element % 2 === 0;
-  const findOptions = {
-    thisArg: null, // `this`로 사용할 값 (null로 설정)
-  };
+  //* 13~15번 테스트
+  // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-  const firstEvenIndex = numbers.filter(
-  function (element, index, array) {
-    // `this`를 사용하려면 `findOptions`에 `thisArg` 값을 설정해야 함
-    // console.log(`현재 요소: ${element}`);
-    // console.log(`현재 요소의 인덱스: ${index}`);
-    // console.log(`배열 전체: ${array}`);
-      if (this === null) {
-        console.log('`this` is null');
-      }
+  // const isEven = (element) => element % 2 === 0;
+  // const findOptions = {
+  //   thisArg: null, // `this`로 사용할 값 (null로 설정)
+  // };
+
+  // const firstEvenIndex = numbers.filter(
+  // function (element, index, array) {
+  //   // `this`를 사용하려면 `findOptions`에 `thisArg` 값을 설정해야 함
+  //   // console.log(`현재 요소: ${element}`);
+  //   // console.log(`현재 요소의 인덱스: ${index}`);
+  //   // console.log(`배열 전체: ${array}`);
+  //     if (this === null) {
+  //       console.log('`this` is null');
+  //     }
     
-      // 테스트 함수: 짝수를 찾아 첫 번째 짝수의 인덱스 반환
-      return isEven(element);
-    },
-    findOptions
-  );
+  //     // 테스트 함수: 짝수를 찾아 첫 번째 짝수의 인덱스 반환
+  //     return isEven(element);
+  //   },
+  //   findOptions
+  // );
 
-  console.log(numbers)
-  console.log(firstEvenIndex); // 1 (첫 번째 짝수의 인덱스)
+  // console.log(numbers)
+  // console.log(firstEvenIndex); // 1 (첫 번째 짝수의 인덱스)
   
