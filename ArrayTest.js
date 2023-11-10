@@ -45,7 +45,8 @@ function createArrayWithoutIndex(originalArray,indexToRemove){
 
 let sameNameArray=[]
 
-// for(i=0; i<nameArray.length; i++){
+//* 1try
+//for(i=0; i<nameArray.length; i++){
 //   if(createArrayWithoutIndex(nameArray,i).includes(nameArray[i])===true){
 //     sameNameArray.push(i);
 //   }
@@ -53,18 +54,20 @@ let sameNameArray=[]
 // console.log(sameNameArray)
 // console.log(sameNameArray[sameNameArray.length-1] +1);
 
-// for(i=0; i<nameArray.length; i++){
+//* 2try
+//for(i=0; i<nameArray.length; i++){
 //   if(createArrayWithoutIndex(nameArray,i).includes(nameArray[i])===true){
 //     sameNameArray.push(nameArray[i])
 //   }
 // }
 
-// for(i=0; i<nameArray.length; i++){
-//   if(createArrayWithoutIndex(nameArray,i).findIndex((element)=>{element ===nameArray[i]})
-//   ){ 
+//* 3try
+for(i=0; i<nameArray.length; i++){
+  if(createArrayWithoutIndex(nameArray,i).findIndex((element)=>{element ===nameArray[i]})
+  ){ 
 
-//   }
-// }
+  }
+}
 
 
 
