@@ -1,5 +1,5 @@
-const studentList = ['김우진','김현','방승희','변호녕','소사무엘','송영준','신동현','오승민','유승민', '윤준현','이민구','이유안','이은정','정영식','최성민','최은철','홍문기']
-const pokemonList = ['피카츄','라이츄','파이리','꼬북이']
+const studentList = ['김우진', '김현', '방승희', '변호녕', '소사무엘', '송영준', '신동현', '오승민', '유승민', '윤준현', '이민구', '이유안', '이은정', '정영식', '최성민', '최은철', '홍문기']
+const pokemonList = ['피카츄', '라이츄', '파이리', '꼬북이']
 
 //? 1. 전체 명단을 문자열로 출력하여, 모든 학생의 이름이 쉼표로 구분되도록 하려고 합니다. 이를 구현하는 코드를 작성하세요.
 // console.log(studentList.join())
@@ -51,6 +51,7 @@ const pokemonList = ['피카츄','라이츄','파이리','꼬북이']
 // console.log(studentList.slice(1,4))
 
 //? 14.명단에서 이름에 '승'을 포함하는 모든 학생들의 이름을 찾아 새로운 명단을 만드는 코드를 작성하세요.
+//* 좀더 생각해보기
 // let nameSeung = []
 // for(i=0; i<studentList.length; i++){
 //   for(j=0; j<studentList[i].length; j++){
@@ -61,3 +62,33 @@ const pokemonList = ['피카츄','라이츄','파이리','꼬북이']
 // }
 
 // console.log(nameSeung)
+
+//*메서드로? 이름이 3글자가 아닐경우에는 문제가 됨.
+// let nameSueungwithMethod = []
+// studentList.filter((element)=>{
+//   if(element[1]==="승"||element[2]==="승"){
+//   nameSueungwithMethod.push(element)}})
+
+//   console.log(nameSueungwithMethod)
+
+
+//*좀더 정확하게 이름이 3글자가 아닐 경우를 생각.
+// let nameSueungwithMethod = []
+// studentList.filter((element) => {
+//   for (i = 1; i < element.length; i++) {
+//     if(element[i] === '승'){
+//       nameSueungwithMethod.push(element)
+//     }
+//   }
+// })
+
+// console.log(nameSueungwithMethod)
+
+//? 15. 명단에 '홍'으로 시작하는 학생이 한 명이라도 있는지 확인하는 코드를 작성하세요.
+//* return을 빼먹지 말자!
+// let firstNameHong = []
+
+// console.log(studentList.some((element) => {
+//   return element[0] === '홍'
+// }
+// ))
