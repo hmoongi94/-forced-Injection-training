@@ -1,6 +1,8 @@
 const testArray = ["안녕", "나는", "홍문기야","좀더", "긴","배열",1,2,3,4,5]
 const testArray2 = ["안녕","나는", "새로온 학생이야"]
 const testNumbers = [1,2,3,4,5,6,7,8,9]
+const name = "홍문기"
+console.log(name[0])
 
 // * 삭제: pop(마지막요소에 삭제) <-> shift(첫번째요소)
 // * 추가: push(마지막요소에 추가) <-> unshift(첫번째요소)
