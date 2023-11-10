@@ -69,10 +69,7 @@ for(i=0; i<nameArray.length; i++){
   }
 }
 
-
-
-
-
+  //* 4try
   //* reduce메서드는 문자열은 return을 줘야하고, 숫자는 return을 쓰면 안됨.
 
 
