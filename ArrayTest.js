@@ -19,17 +19,50 @@ const pokemonList = ['피카츄', '라이츄', '파이리', '꼬북이']
 
 //? 6. 명단에 같은 이름(성씨제외)을 가진 학생이 두 명 있습니다. 이 중 마지막에 있는 학생의 위치를 찾아 출력하는 코드를 작성하세요.
 //* 아직 못품. 해결해야함
-let newArray = []
+
 
 //*성이 한글자인 경우만 해당됨.
-console.log()
-// for(i=0; i<studentList.length; i++){
-//   for(j=1; j<studentList[i].length; i++){
-//     newArray[i] = studentList[i][j]
-//   }
-// }
+let nameArray = []
 
-console.log(newArray)
+studentList.forEach((element)=>{
+  nameArray.push(element.slice(1))
+})
+
+// * 콜백함수로 부를 함수 만들기
+function createArrayWithoutIndex(originalArray,indexToRemove){
+  let newArray = [];
+
+  for(let i=0; i< originalArray.length; i++){
+    if(i !==indexToRemove ){
+      newArray.push(originalArray[i])
+    }
+  }
+  return newArray
+}
+
+// const newArray = createArrayWithoutIndex(nameArray, 0)
+// console.log(newArray)
+
+let sameNameArray=[]
+
+for(i=0; i<nameArray.length; i++){
+  if(createArrayWithoutIndex(nameArray,i).includes(nameArray[i])===true){
+    sameNameArray.push(nameArray[i])
+  }
+}
+
+console.log(sameNameArray)
+
+// console.log(nameArray)
+
+
+
+
+
+
+
+
+// console.log(nameArray)
 
   //* reduce메서드는 문자열은 return을 줘야하고, 숫자는 return을 쓰면 안됨.
 
