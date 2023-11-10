@@ -22,20 +22,21 @@ const pokemonList = ['피카츄', '라이츄', '파이리', '꼬북이']
 let newArray = []
 
 //*성이 한글자인 경우만 해당됨.
-const numbers = [1,2,3,4,5]
-const strings = ['안','나','홍']
-const reducetest2 = numbers.reduce((accumulator,element)=> accumulator+element)
-const reducetest = studentList.reduce((accumulator,element)=>{
-  accumulator+element
-})
-const reducetest3 = studentList.reduce((accumulator,element)=>{
-  return accumulator+element})
+console.log()
+// for(i=0; i<studentList.length; i++){
+//   for(j=1; j<studentList[i].length; i++){
+//     newArray[i] = studentList[i][j]
+//   }
+// }
 
-
-console.log(reducetest3)
-console.log(reducetest2)
-console.log(reducetest)
 console.log(newArray)
+
+  //* reduce메서드는 문자열은 return을 줘야하고, 숫자는 return을 쓰면 안됨.
+
+
+
+
+
 
 //? 7. 명단에서 성씨가 ‘김’씨인 학생의 이름을 찾아 출력하는 코드를 작성하세요
 
