@@ -163,6 +163,7 @@ const testNumbers = [1,2,3,4,5,6,7,8,9]
   //? 18. 배열의 어떤 요소라도 주어진 테스트 함수를 통과하는지 테스트하는 메서드는 무엇인가요?
   //* some()메서드: 조건을 만족하면 true반환, 아닐시 false반환
   //* return을 안주면 값을 false로 반환한다.
+  //* array.some(callback(element[, index[, array]])[, thisArg]);
   // console.log(testArray.some((element)=>{
   //   return element=== "안녕"
   // }))
