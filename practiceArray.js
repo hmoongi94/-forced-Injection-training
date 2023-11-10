@@ -9,7 +9,7 @@ const testNumbers = [1,2,3,4,5,6,7,8,9]
 // * slice(start,end) -> 원하는 부분을 추출해서 배열로 새롭게 만들어줌. start,end는 배열의 인덱스 값을 받고 마지막 end는 들어가지 않는것을 주의.
 // * splice(start,deleteCount,item1,item2,...)는 원래 배열을 바꾸는 용도. 일부분을 삭제하거나 교체해줌. deleteCount를 0하면 원하는 자리에 추가만 할 수 있다.
 
-// * concat(): 두 배열을 합치기. 새로운 배열 추가.
+// * concat(): 두 배열을 합치기. 새로운 배열 추가. 합치는 두 배열은 변화 없음
 // * join(): 배열을 하나의 문자열로 만들기. -> 새 배열이 나오거나 배열이 변환되지는 않음.
 
 // * reverse(): 배열을 반환-> 원래배열 바뀜
@@ -217,22 +217,23 @@ const testNumbers = [1,2,3,4,5,6,7,8,9]
   //? 23. 먼저 주어진 함수를 배열의 각 요소에 매핑한 다음 결과를 새 배열로 평탄화하는 메서드는 무엇인가요?
   //* flatMap()메서드: 평탄화한다는 말은 하나의 배열로 만든다는 말.
   //* map과 비교해보면 이해하는데 도움이 된다.
-  const words = ['Hello', 'World'];
+  // const words = ['Hello', 'World'];
 
-  const flattenedLetters = words.flatMap(word => word.split(''));
-  const mappingLetters = words.map(word=> word.split(''))
-  
-  console.log(flattenedLetters)
-  console.log(mappingLetters)
+  // const flattenedLetters = words.flatMap(word => word.split(''));
+  // const mappingLetters = words.map(word=> word.split(''))
+
+  // console.log(flattenedLetters)
+  // console.log(mappingLetters)
 
 
   //? 24. 지정된 깊이까지 재귀적으로 평탄화하여 새 배열을 생성하는 메서드는 무엇인가요?
   //* flat()메서드: 작성법 -> array.flat([depth])
-  const nestedArray = [1, [2, [3, [4]], 5]];
+  // const nestedArray = [1, [2, [3, [4]], 5]];
 
-  const flattenedArray = nestedArray.flat(0);
+  // const flattenedArray = nestedArray.flat(0);
 
-  console.log(flattenedArray);
+  // console.log(flattenedArray);
+  // console.log(nestedArray.flatMap(element=>element))
 
 
 
