@@ -19,9 +19,23 @@ const pokemonList = ['피카츄', '라이츄', '파이리', '꼬북이']
 
 //? 6. 명단에 같은 이름(성씨제외)을 가진 학생이 두 명 있습니다. 이 중 마지막에 있는 학생의 위치를 찾아 출력하는 코드를 작성하세요.
 //* 아직 못품. 해결해야함
-// let newArray = []
-// studentList.forEach(element=> newArray.push(element[1]+element[2]) )
-// console.log(newArray)
+let newArray = []
+
+//*성이 한글자인 경우만 해당됨.
+const numbers = [1,2,3,4,5]
+const strings = ['안','나','홍']
+const reducetest2 = numbers.reduce((accumulator,element)=> accumulator+element)
+const reducetest = studentList.reduce((accumulator,element)=>{
+  accumulator+element
+})
+const reducetest3 = studentList.reduce((accumulator,element)=>{
+  return accumulator+element})
+
+
+console.log(reducetest3)
+console.log(reducetest2)
+console.log(reducetest)
+console.log(newArray)
 
 //? 7. 명단에서 성씨가 ‘김’씨인 학생의 이름을 찾아 출력하는 코드를 작성하세요
 
