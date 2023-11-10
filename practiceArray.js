@@ -99,6 +99,7 @@ const testNumbers = [1,2,3,4,5,6,7,8,9]
 
 // ? 10. 배열의 요소를 적절한 위치에 정렬하는 메서드는 무엇인가요?
   // * sort()메서드: 알파벳이나 숫자를 정렬해주고 원래 배열도 바뀜.
+  // * sort(comparefunction)
   // * sort((a,b)=> a-b) -> 오름차순
   // * sort((a,b)=> b-a) -> 내림차순
   // const alphabet = ['s','d','f','a','q','w','e','r','t']
