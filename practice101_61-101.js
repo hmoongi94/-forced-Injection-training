@@ -449,3 +449,52 @@
   // });
 
 //? 92번. node.js에서 path 모듈을 사용하여 파일 경로를 조작하는 코드를 작성해보세요.
+  //* 1번. 경로결합
+  // const path = require('path');
+
+  // const folderPath = '/users/user/documents';
+  // const fileName = 'example.txt';
+
+  // const filePath = path.join(folderPath, fileName);
+
+  // console.log('결합된 경로:', filePath);
+
+  //* 2번. 경로 정규화
+  // const path = require('path');
+
+  // const messyPath = '/users/user/../documents/example.txt';
+  // const normalizedPath = path.normalize(messyPath);
+
+  // console.log('정규화된 경로:', normalizedPath);
+
+  //* 3번. 파일 확장자 추출
+  // const path = require('path');
+
+  // const filePath = '/users/user/documents/example.txt';
+  // const fileExtension = path.extname(filePath);
+
+  // console.log('파일 확장자:', fileExtension);
+  
+  //* 4번. 경로파싱
+  // const path = require('path');
+
+  // const filePath = '/users/user/documents/example.txt';
+  // const pathInfo = path.parse(filePath);
+
+  // console.log('파싱된 경로 정보:', pathInfo);
+
+//? 93번. express.js에서 정적 파일을 호스팅하는 방법을 설명하고 예를 들어보세요.
+  // const express = require('express');
+  // const path = require('path');
+  
+  // const app = express();
+  
+  // // 정적 파일을 제공할 디렉토리를 설정
+  // app.use(express.static(path.join(__dirname, 'public')));
+  
+  // // 기타 라우팅 또는 미들웨어 설정...
+  
+  // const port = 3000;
+  // app.listen(port, () => {
+  //   console.log(`서버가 http://localhost:${port}/ 에서 실행 중입니다.`);
+  // });
