@@ -328,4 +328,9 @@
   //   const storedData = localStorage.getItem('myKey');
   //   console.log(storedData); // 'Hello, Local Storage!' 출력
   // </script>
+
   //이 코드에서는 localStorage.setItem을 사용하여 'myKey'라는 키로 문자열 데이터를 Local Storage에 저장하고 있습니다. 그리고 localStorage.getItem을 사용하여 'myKey' 키에 해당하는 데이터를 검색하고 콘솔에 출력하고 있습니다.
+
+//? 82번. Node.js에서 파일을 읽는 코드를 작성해보세요.
+  //* fs.readfile(비동기), fs.readfileSync(동기)
+  
