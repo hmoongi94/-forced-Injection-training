@@ -431,3 +431,19 @@
   //* map(): map 함수는 배열의 각 요소에 대해 주어진 함수를 호출한 결과로 새로운 배열을 생성합니다.
   //* filter(): filter 함수는 주어진 함수의 조건을 만족하는 요소로 이루어진 배열을 생성합니다.
   //* reduce(): reduce 함수는 배열의 각 요소에 대해 주어진 함수를 실행하고 누적값을 계산합니다.
+
+//? 91번. fs모듈을 사용하여 디렉토리를 생성하는 코드를 작성하세요.
+  // const fs = require('fs');
+  
+  // // 새로 생성할 디렉토리 경로
+  // const newDirectoryPath = 'new_directory';
+  
+  // // 디렉토리 생성
+  // fs.mkdir(newDirectoryPath, (err) => {
+  //   if (err) {
+  //     console.error('디렉토리 생성 오류:', err);
+  //     return;
+  //   }
+  
+  //   console.log('디렉토리가 성공적으로 생성되었습니다.');
+  // });
