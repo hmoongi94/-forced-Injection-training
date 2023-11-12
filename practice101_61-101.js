@@ -498,3 +498,27 @@
   // app.listen(port, () => {
   //   console.log(`서버가 http://localhost:${port}/ 에서 실행 중입니다.`);
   // });
+
+//? 94번. Node.js에서 npm 패키지를 설치하고 사용하는 코드를 작성해보세요.
+  //* 밑 코드에서는 axios 패키지를 불러와서, 해당 패키지를 사용하여 JSONPlaceholder API로 HTTP GET 요청을 보내고 응답을 콘솔에 출력하는 예제입니다.
+
+  //* 이제 axios 패키지가 설치되어 있지 않다면 npm install axios 명령을 통해 설치하고, 그 후에 위의 예제 코드를 실행하면 됩니다. 패키지를 설치하면 node_modules 디렉토리가 생성되고, 해당 디렉토리 안에 패키지가 설치됩니다.
+
+  //패키지 설치
+  //npm install axios
+
+  // 패키지 불러오기
+  // const axios = require('axios');
+
+  // // 사용 예제: HTTP GET 요청 보내기
+  // axios.get('https://jsonplaceholder.typicode.com/todos/1')
+  //   .then(response => {
+  //     // 요청이 성공한 경우
+  //     console.log('응답 데이터:', response.data);
+  //   })
+  //   .catch(error => {
+  //     // 요청이 실패한 경우
+  //     console.error('에러:', error);
+  //   });
+
+//? 95번.
