@@ -383,6 +383,8 @@
   // once: 이벤트 리스너를 추가하되, 한 번만 실행되도록 합니다.
 
 //? 85번. Express.js를 사용해 Http서버를 생성하는 코드를 작성하세요.
+  //* express()는 createServer와 같은 기능. 서버를 염.
+  //* 그 뒤 get,post요청을 핸들링해주는 라우터 설정.
   // // Express 모듈 불러오기
   // const express = require('express');
 
