@@ -408,4 +408,14 @@
 //? 87번. node.js에서 환경변수를 사용하는 방법을 설명하고 예를 들어보세요.
   //* Node.js에서 환경변수를 사용하는 것은 주로 process.env 객체를 통해 이루어집니다. process.env 객체에는 현재 프로세스의 환경변수가 포함되어 있습니다. 이를 통해 애플리케이션 코드에서 환경변수를 읽어와 사용할 수 있습니다.
 
-  
+//? 88번. javascript에서 문자열을 숫자로 변환하는 방법을 예로 들어보세요.
+  //* parseInt, parseFloat, +
+
+  // let strNumber = "1233.14"
+  // let intNUmber = parseInt(strNumber)
+  // console.log(intNUmber)
+  // let floatNumber = parseFloat(strNumber)
+  // console.log(floatNumber)
+  // console.log(parseInt.strNumber)
+  // console.log(parseFloat.strNumber)
+  // console.log(+strNumber)
