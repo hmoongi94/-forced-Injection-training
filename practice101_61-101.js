@@ -261,3 +261,26 @@
 
   //기본예시
   //대상 객체 (target object)생성
+  const targetObject = {
+    name: Hong,
+    age: 30
+  }
+
+  // proxy 객체 생성
+  const proxyObject = new Proxy(targetObject,{
+    //get 헨들러: 속성에 접근할 때 실행되는 동작 정의
+    get: function(target, property, receiver){
+      console.log(`Getting ${property} value`);
+      // 실제 속성값 반환
+      return target[property];
+    },
+    // set 핸들러: 속성에 값을 할당할 때 실행되는 동작 정의
+    set: function(target, property, value, receiver){
+      console.log(`setting ${property} to ${value}`)
+      // 실제 속성값 할당
+      target[property] = value;
+      return true
+    }
+  })
+
+  // 
