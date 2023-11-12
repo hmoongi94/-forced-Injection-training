@@ -262,34 +262,34 @@
 
   //기본예시
   //대상 객체 (target object)생성
-  const targetObject = {
-    name: 'hong',
-    age: 30
-  }
+  // const targetObject = {
+  //   name: 'hong',
+  //   age: 30
+  // }
 
-  // proxy 객체 생성
-  const proxyObject = new Proxy(targetObject,{
-    //get 헨들러: 속성에 접근할 때 실행되는 동작 정의
-    get: function(target, property, receiver){
-      console.log(`Getting ${property} value`);
-      // 실제 속성값 반환
-      return target[property];
-    },
-    // set 핸들러: 속성에 값을 할당할 때 실행되는 동작 정의
-    set: function(target, property, value, receiver){
-      console.log(`setting ${property} to ${value}`)
-      // 실제 속성값 할당
-      target[property] = value;
-      return true
-    }
-  })
+  // // proxy 객체 생성
+  // const proxyObject = new Proxy(targetObject,{
+  //   //get 헨들러: 속성에 접근할 때 실행되는 동작 정의
+  //   get: function(target, property, receiver){
+  //     console.log(`Getting ${property} value`);
+  //     // 실제 속성값 반환
+  //     return target[property];
+  //   },
+  //   // set 핸들러: 속성에 값을 할당할 때 실행되는 동작 정의
+  //   set: function(target, property, value, receiver){
+  //     console.log(`setting ${property} to ${value}`)
+  //     // 실제 속성값 할당
+  //     target[property] = value;
+  //     return true
+  //   }
+  // })
 
-  // proxy를 통한 속성 접근과 할당
-  console.log(proxyObject.name);
-  proxyObject.age = 31;
+  // //proxy를 통한 속성 접근과 할당
+  // console.log(proxyObject.name);
+  // proxyObject.age = 31;
 
-  // 실제 대상 객체의 값도 변경되었음을 확인
-  console.log(targetObject.age)
+  // // 실제 대상 객체의 값도 변경되었음을 확인
+  // console.log(targetObject.age)
 
 //? 77번 DOM요소를 선택하는 코드를 작성해보세요.
   //* DOM 요소를 선택하는 방법은 여러가지가 있다.
@@ -334,3 +334,20 @@
 //? 82번. Node.js에서 파일을 읽는 코드를 작성해보세요.
   //* fs.readfile(비동기), fs.readfileSync(동기)
   
+//? 83번. node.js에서 HTTP 서버를 생성하는 코드를 작성해보세요.
+  //* Node.js에서 HTTP 서버를 생성하는 가장 기본적인 방법은 http 모듈을 사용하는 것입니다. 아래는 간단한 HTTP 서버를 생성하는 코드의 예시입니다:
+
+  // const http = require('http');
+
+  // //서버를 생성
+  // const server = http.createServer((req, res) => {
+    // //요청이 들어왔을 때의 처리 로직
+    // res.writeHead(200, { 'Content-Type': 'text/plain' });
+    // res.end('Hello, World!\n');
+  // });
+  // 
+  // //서버를 지정한 포트(예: 3000)로 실행
+  // const port = 3000;
+  // server.listen(port, () => {
+    // console.log(`서버가 http://localhost:${port}/ 에서 실행 중입니다.`);
+  // });
