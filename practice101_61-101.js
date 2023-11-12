@@ -262,7 +262,7 @@
   //기본예시
   //대상 객체 (target object)생성
   const targetObject = {
-    name: Hong,
+    name: 'hong',
     age: 30
   }
 
@@ -283,4 +283,9 @@
     }
   })
 
-  // 
+  // proxy를 통한 속성 접근과 할당
+  console.log(proxyObject.name);
+  proxyObject.age = 31;
+
+  // 실제 대상 객체의 값도 변경되었음을 확인
+  console.log(targetObject.age)
