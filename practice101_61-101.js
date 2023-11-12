@@ -294,7 +294,9 @@
 //? 77번 DOM요소를 선택하는 코드를 작성해보세요.
   //* DOM 요소를 선택하는 방법은 여러가지가 있다.
 
+  //*querySelector, querySelecotrAll
   //querySelector와 querySelectorAll은 모두 CSS 선택자를 사용하여 DOM에서 요소를 선택하는 메서드입니다. 그러나 두 메서드 간에는 중요한 차이점이 있습니다.
+  //주로 사용 목적에 따라 선택하면 됩니다. 만일 단일 요소를 선택하고자 한다면 querySelector를 사용하고, 여러 요소를 선택하고자 한다면 querySelectorAll을 사용합니다. 반환된 NodeList는 배열이 아니기 때문에 배열 메서드를 사용하려면 Array.from()이나 spread 연산자 ...을 사용하여 배열로 변환해주어야 합니다.
 
   //querySelector:
   //주어진 CSS 선택자와 일치하는 첫 번째 요소를 반환합니다.
@@ -307,5 +309,6 @@
   //일치하는 요소가 없으면 빈 NodeList를 반환합니다.
   //반환 값은 NodeList이며, 모든 일치하는 요소를 포함합니다.
   //const elements = document.querySelectorAll('.myClass');
-  
-  //주로 사용 목적에 따라 선택하면 됩니다. 만일 단일 요소를 선택하고자 한다면 querySelector를 사용하고, 여러 요소를 선택하고자 한다면 querySelectorAll을 사용합니다. 반환된 NodeList는 배열이 아니기 때문에 배열 메서드를 사용하려면 Array.from()이나 spread 연산자 ...을 사용하여 배열로 변환해주어야 합니다.
+
+  //* getElementsbyId, getElementsByClassName, getElementsByName
+  //* parentNode, previousSibling, nextSibling, firstChild, lastChild
