@@ -560,3 +560,15 @@
 
   // // 자식 객체의 메서드 호출
   // myDog.bark(); // 멍멍이이(가) 짖습니다.
+
+//? 96번. 삼항 연산자를 사용하는 예를 들어보세요.
+  //* 삼항 연산자(ternary operator)는 조건문을 간단하게 표현할 수 있는 JavaScript의 연산자입니다. 삼항 연산자는 다음과 같은 구조를 가지고 있습니다: condition ? expressionIfTrue : expressionIfFalse.
+  
+  // const age = 25;
+
+  // // 삼항 연산자를 사용하여 성인 여부를 판별
+  // const isAdult = age >= 18 ? '성인입니다' : '미성년자입니다';
+
+  // console.log(isAdult); // 출력: '성인입니다'
+
+//? 97번. 
