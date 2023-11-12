@@ -382,4 +382,20 @@
   // emit: 이벤트를 발생시킵니다.
   // once: 이벤트 리스너를 추가하되, 한 번만 실행되도록 합니다.
 
-//? 85번. 
+//? 85번. Express.js를 사용해 Http서버를 생성하는 코드를 작성하세요.
+  // // Express 모듈 불러오기
+  // const express = require('express');
+
+  // // Express 애플리케이션 생성
+  // const app = express();
+
+  // // 루트 경로에 대한 요청 처리
+  // app.get('/', (req, res) => {
+  //   res.send('Hello, Express!');
+  // });
+
+  // // 서버를 지정한 포트(예: 3000)로 실행
+  // const port = 3000;
+  // app.listen(port, () => {
+  //   console.log(`서버가 http://localhost:${port}/ 에서 실행 중입니다.`);
+  // });
