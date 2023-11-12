@@ -521,4 +521,42 @@
   //     console.error('에러:', error);
   //   });
 
-//? 95번.
+//? 95번. javascript에서 프로토타입 기반 상속을 구현하는 코드를 작성해보세요.
+  //* 이 코드에서 Animal은 부모 객체이고, Dog는 자식 객체입니다. Dog 생성자 함수 내에서 Animal 생성자를 호출하면서 Animal.call(this, name)을 사용하여 부모 객체의 속성을 상속받습니다. 그리고 Object.create(Animal.prototype)을 통해 자식 객체의 프로토타입을 부모 객체의 인스턴스로 설정하여 메서드를 상속받습니다.
+
+  //* 이렇게 하면 myDog 인스턴스는 Animal의 메서드(speak)와 Dog의 메서드(bark)를 모두 사용할 수 있습니다.
+
+
+  // // 부모 객체 생성자 함수
+  // function Animal(name) {
+  //   this.name = name;
+  // }
+
+  // // 부모 객체의 메서드 추가
+  // Animal.prototype.speak = function() {
+  //   console.log(`${this.name}이(가) 소리를 냅니다.`);
+  // };
+
+  // // 자식 객체 생성자 함수
+  // function Dog(name, breed) {
+  //   // 부모 객체 생성자 호출
+  //   Animal.call(this, name);
+  //   this.breed = breed;
+  // }
+
+  // // 자식 객체의 프로토타입을 부모 객체의 인스턴스로 설정
+  // Dog.prototype = Object.create(Animal.prototype);
+
+  // // 자식 객체의 메서드 추가
+  // Dog.prototype.bark = function() {
+  //   console.log(`${this.name}이(가) 짖습니다.`);
+  // };
+
+  // // 자식 객체의 인스턴스 생성
+  // const myDog = new Dog('멍멍이', '진돗개');
+
+  // // 부모 객체의 메서드 호출
+  // myDog.speak(); // 멍멍이이(가) 소리를 냅니다.
+
+  // // 자식 객체의 메서드 호출
+  // myDog.bark(); // 멍멍이이(가) 짖습니다.
