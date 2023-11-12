@@ -573,3 +573,36 @@
 
 //? 97번. javascript에서 문자열 템플릿 리터럴을 사용하는 코드를 작성해보세요.
   //* `` (백틱)으로 둘러싸인 문자열 안에서 ${}를 사용하여 변수나 표현식을 삽입할 수 있습니다. 이를 통해 보다 가독성 높은 문자열을 만들 수 있습니다.
+
+//? 98번. 배열과 객체의 차이점을 설명하세요.
+
+//? 99번. 배열과 객체의 공통점을 설명하세요.
+
+//? 100번. 전개연산자(spread Operator)를 사용하는 코드를 작성하세요.
+
+//? 101번. 배열을 얕은복사와 깊은 복사에 대한 예를 들어보세요.
+  //*shallowCopy는 originalArray를 얕게 복사한 배열입니다. 하위 배열 [3, 4]는 참조를 공유하고 있기 때문에, originalArray의 하위 배열을 수정하면 shallowCopy에도 영향이 미칩니다.
+
+  // const originalArray = [1, 2, [3, 4]];
+
+  // // 얕은 복사
+  // const shallowCopy = [...originalArray];
+
+  // // 원본 배열 수정
+  // originalArray[2][0] = 'modified';
+
+  // console.log(originalArray); // [1, 2, ['modified', 4]]
+  // console.log(shallowCopy);   // [1, 2, ['modified', 4]]
+
+  //*deepCopy는 originalArray를 깊게 복사한 배열입니다. JSON.stringify와 JSON.parse를 사용하여 객체를 문자열로 변환하고 다시 객체로 파싱하는 방법을 통해 깊은 복사를 수행하였습니다. 이 방법은 단점으로 함수나 undefined와 같은 특별한 값들을 복사하지 못한다는 한계가 있습니다. 또한, 객체가 순환 참조를 가지고 있으면 무한루프에 빠질 수 있습니다.
+
+  // const originalArray = [1, 2, [3, 4]];
+
+  // // 깊은 복사
+  // const deepCopy = JSON.parse(JSON.stringify(originalArray));
+
+  // // 원본 배열 수정
+  // originalArray[2][0] = 'modified';
+
+  // console.log(originalArray); // [1, 2, ['modified', 4]]
+  // console.log(deepCopy);      // [1, 2, [3, 4]]
