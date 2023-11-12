@@ -401,3 +401,6 @@
   // app.listen(port, () => {
   //   console.log(`서버가 http://localhost:${port}/ 에서 실행 중입니다.`);
   // });
+
+//? 86번. Express.js에서 라우팅을 처리하는 코드를 작성하세요.
+  //* app.get(), app.post(), app.put(), app.delete()등의 메서드를 사용하여 각각의 HTTP 메서드에 대한 라우팅을 설정할 수 있습니다. 이러한 메서드들은 각각의 경로에 대한 요청을 처리하며, 콜백 함수에서는 요청(req)과 응답(res) 객체를 통해 클라이언트와 상호작용할 수 있습니다.
