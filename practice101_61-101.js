@@ -419,3 +419,10 @@
   // console.log(parseInt.strNumber)
   // console.log(parseFloat.strNumber)
   // console.log(+strNumber)
+
+//? 89번. Node.js에서 비동기 함수를 사용하는 예를 작성해보세요.
+  //* setTimeout 함수
+  //* 이벤트 리스너
+  //* fetch 함수
+  //* Promise 객체
+  //* async/await함수
