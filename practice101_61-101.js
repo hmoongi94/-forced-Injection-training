@@ -351,3 +351,35 @@
   // server.listen(port, () => {
     // console.log(`서버가 http://localhost:${port}/ 에서 실행 중입니다.`);
   // });
+  
+//? 84번. node.js에서 이벤트를 발생시키고 그것을 처리하는 코드를 작성해보세요.
+  //* Node.js에서 이벤트를 발생시키고 처리하기 위해서는 events 모듈을 사용합니다. 아래는 간단한 예시 코드입니다:
+  // const EventEmitter = require('events');
+
+  // // 이벤트를 처리할 클래스 정의
+  // class MyEmitter extends EventEmitter {}
+
+  // // 이벤트 발생 및 처리 로직
+  // const myEmitter = new MyEmitter();
+
+  // // 이벤트 리스너 추가
+  // myEmitter.on('customEvent', (arg) => {
+  //   console.log('이벤트가 발생했습니다. 전달된 인자:', arg);
+  // });
+
+  // // 이벤트 발생
+  // myEmitter.emit('customEvent', '인자1');
+
+  // // 이벤트 발생시 콜백 실행
+  // myEmitter.once('onceEvent', () => {
+  //   console.log('이벤트가 한 번만 발생했습니다.');
+  // });
+
+  // myEmitter.emit('onceEvent');
+  // myEmitter.emit('onceEvent'); // 두 번째 호출은 실행되지 않음
+
+  // on: 이벤트 리스너를 추가합니다.
+  // emit: 이벤트를 발생시킵니다.
+  // once: 이벤트 리스너를 추가하되, 한 번만 실행되도록 합니다.
+
+//?
