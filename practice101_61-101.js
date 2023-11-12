@@ -434,16 +434,18 @@
 
 //? 91번. fs모듈을 사용하여 디렉토리를 생성하는 코드를 작성하세요.
   // const fs = require('fs');
-  
+
   // // 새로 생성할 디렉토리 경로
   // const newDirectoryPath = 'new_directory';
-  
+
   // // 디렉토리 생성
   // fs.mkdir(newDirectoryPath, (err) => {
   //   if (err) {
   //     console.error('디렉토리 생성 오류:', err);
   //     return;
   //   }
-  
+
   //   console.log('디렉토리가 성공적으로 생성되었습니다.');
   // });
+
+//? 92번. node.js에서 path 모듈을 사용하여 파일 경로를 조작하는 코드를 작성해보세요.
