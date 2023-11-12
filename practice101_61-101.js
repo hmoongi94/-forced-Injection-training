@@ -312,3 +312,5 @@
 
   //* getElementsbyId, getElementsByClassName, getElementsByName
   //* parentNode, previousSibling, nextSibling, firstChild, lastChild
+
+//? 78번. 선택한 DOM요소의 텍스트를 변경하는 코드를 작성해보세요.
