@@ -318,3 +318,14 @@
 //? 80번. 웹 브라우저의 콘솔에 로그를 출력하는 코드를 작성하세요.
 
 //? 81번. Local Storage에 데이터를 저장하고 검색하는 코드를 작성하세요.
+  //* 주의: Local Storage에 저장되는 데이터는 문자열 형태로 저장되므로, 객체나 배열 같은 복잡한 데이터를 저장하려면 해당 데이터를 JSON 문자열로 변환하여 저장하고, 검색 시에는 다시 JSON 파싱하여 사용해야 합니다.
+  
+  // <script>
+  //   // 데이터 저장
+  //   localStorage.setItem('myKey', 'Hello, Local Storage!');
+
+  //   // 데이터 검색
+  //   const storedData = localStorage.getItem('myKey');
+  //   console.log(storedData); // 'Hello, Local Storage!' 출력
+  // </script>
+  //이 코드에서는 localStorage.setItem을 사용하여 'myKey'라는 키로 문자열 데이터를 Local Storage에 저장하고 있습니다. 그리고 localStorage.getItem을 사용하여 'myKey' 키에 해당하는 데이터를 검색하고 콘솔에 출력하고 있습니다.
