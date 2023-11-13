@@ -19,7 +19,27 @@ const pokemonList = ['피카츄', '라이츄', '파이리', '꼬북이']
 
 //? 6. 명단에 같은 이름(성씨제외)을 가진 학생이 두 명 있습니다. 이 중 마지막에 있는 학생의 위치를 찾아 출력하는 코드를 작성하세요.
 //* 아직 못품. 해결해야함
-const array = [1, 2, 2, 3, 4, 4, 5];
+//* 바닐라식으로 이해하기
+const arrayOfArrays = [
+  [7, 8, 14],
+  [7, 8, 14],
+  [12, 13, 16],
+  [12, 13, 16],
+  [7, 8, 14],
+  [12, 13, 16]
+];
+
+// 중복된 값을 제거할 배열
+const uniqueArrays = [];
+
+// 배열을 돌면서 중복된 배열을 제거
+for (const arr of arrayOfArrays) {
+  if (!uniqueArrays.some((uniqueArr) => JSON.stringify(uniqueArr) === JSON.stringify(arr))) {
+    uniqueArrays.push(arr);
+  }
+}
+
+console.log(uniqueArrays);
 
 
 //* 성이 한글자인 경우만 해당됨.
@@ -69,17 +89,12 @@ function findDuplicateNames(array) {
     }
   }
 
-  console.log(duplicateIndexes.map(JSON.stringify))
-
   // 중복된 배열 제거하기
 
   // 배열안의 값끼리 비교할 때는 Set을 써서 중복을 없앨 수 있지만 배열간의 비교는 불가능 하여 배열을 문자화시켜서 비교를 해준다. 비교후에 다시 객체로 파싱해서 배열을 만들어준다.
   const uniqueArrays = Array.from(new Set(duplicateIndexes.map(JSON.stringify)), JSON.parse);
 
   return uniqueArrays
-
-
-
 
 }
 
