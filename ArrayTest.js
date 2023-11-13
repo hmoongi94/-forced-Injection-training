@@ -1,4 +1,4 @@
-const studentList = ['김우진', '김현', '방승희', '변호녕', '소사무엘', '송영준', '신동현', '오승민', '유승민', '윤준현', '이민구', '이유안', '홍승민', '김영식','이영식', '이은정', '정영식', '최성민', '최은철', '홍문기']
+const studentList = ['김우진', '김현', '방승희', '변호녕', '소사무엘', '송영준', '신동현', '오승민', '유승민', '윤준현', '이민구', '이유안', '김영식', '이영식', '홍승민', '이은정', '정영식', '최성민', '최은철', '홍문기']
 const pokemonList = ['피카츄', '라이츄', '파이리', '꼬북이']
 
 //? 1. 전체 명단을 문자열로 출력하여, 모든 학생의 이름이 쉼표로 구분되도록 하려고 합니다. 이를 구현하는 코드를 작성하세요.
@@ -19,6 +19,7 @@ const pokemonList = ['피카츄', '라이츄', '파이리', '꼬북이']
 
 //? 6. 명단에 같은 이름(성씨제외)을 가진 학생이 두 명 있습니다. 이 중 마지막에 있는 학생의 위치를 찾아 출력하는 코드를 작성하세요.
 //* 아직 못품. 해결해야함
+const array = [1, 2, 2, 3, 4, 4, 5];
 
 
 //* 성이 한글자인 경우만 해당됨.
@@ -50,25 +51,32 @@ function findDuplicateNames(array) {
   for (let i = 0; i < array.length; i++) {
     // 현재 요소를 제외한 배열에서 같은 값의 모든 인덱스를 찾음
     let indexes = nameArray.reduce(
-    (acc, element, index) => {
-      if (element === array[i]) {
-        // element가 array[i]와 같을 때의 index를 배열로 만들어준다.
-        // ...스프레드 연산자를 사용해 여러 겹의 배열이 아닌 하나의 배열로 만들어준다.
-        // accumulator의 속성을 활용해 같은 값의 index를 추가로 뽑아 낼 수 있다.
-        return [...acc, index];
-      } else {
-        return acc;
-      }
-    },[])
+      (acc, element, index) => {
+        if (element === array[i]) {
+          // element가 array[i]와 같을 때의 index를 배열로 만들어준다.
+          // ...스프레드 연산자를 사용해 여러 겹의 배열이 아닌 하나의 배열로 만들어준다.
+          // accumulator의 속성을 활용해 같은 값의 index를 추가로 뽑아 낼 수 있다.
+          return [...acc, index];
+        } else {
+          return acc;
+        }
+      }, [])
     // console.log(indexes)
 
     // 중복된 값이 있다면 현재 인덱스와 찾은 인덱스를 기록
     if (indexes.length > 1) {
-      duplicateIndexes.push({duplicates: indexes });
+      duplicateIndexes.push(indexes);
     }
   }
 
-  return duplicateIndexes;
+  // 중복된 배열 제거하기
+  const uniqueArrays = Array.from(new Set(duplicateIndexes.map(JSON.stringify)), JSON.parse);
+
+  return uniqueArrays
+
+
+
+
 }
 
 const allSameNameArrayIndex = findDuplicateNames(nameArray);
