@@ -256,4 +256,353 @@
       // console.error('Unhandled error:', error);
     // });
 
-// 75번. proxy객체를 생성하는 코드를 작성해보세요.
+    //? 75번. proxy객체를 생성하는 코드를 작성해보세요.
+    //? 76번. proxy를 사용해 객체의 속성에 대한 접근을 제어하는 코드를 작성해보세요.
+    //* proxy 객체는 다른 객체에 대한 가상화 프록시를 만드는데 사용함. 이를 통해 객체의 기본동작을 수정하거나 확장할 수 있습니다.
+
+  //기본예시
+  //대상 객체 (target object)생성
+  // const targetObject = {
+  //   name: 'hong',
+  //   age: 30
+  // }
+
+  // // proxy 객체 생성
+  // const proxyObject = new Proxy(targetObject,{
+  //   //get 헨들러: 속성에 접근할 때 실행되는 동작 정의
+  //   get: function(target, property, receiver){
+  //     console.log(`Getting ${property} value`);
+  //     // 실제 속성값 반환
+  //     return target[property];
+  //   },
+  //   // set 핸들러: 속성에 값을 할당할 때 실행되는 동작 정의
+  //   set: function(target, property, value, receiver){
+  //     console.log(`setting ${property} to ${value}`)
+  //     // 실제 속성값 할당
+  //     target[property] = value;
+  //     return true
+  //   }
+  // })
+
+  // //proxy를 통한 속성 접근과 할당
+  // console.log(proxyObject.name);
+  // proxyObject.age = 31;
+
+  // // 실제 대상 객체의 값도 변경되었음을 확인
+  // console.log(targetObject.age)
+
+//? 77번 DOM요소를 선택하는 코드를 작성해보세요.
+  //* DOM 요소를 선택하는 방법은 여러가지가 있다.
+
+  //*querySelector, querySelecotrAll
+  //querySelector와 querySelectorAll은 모두 CSS 선택자를 사용하여 DOM에서 요소를 선택하는 메서드입니다. 그러나 두 메서드 간에는 중요한 차이점이 있습니다.
+  //주로 사용 목적에 따라 선택하면 됩니다. 만일 단일 요소를 선택하고자 한다면 querySelector를 사용하고, 여러 요소를 선택하고자 한다면 querySelectorAll을 사용합니다. 반환된 NodeList는 배열이 아니기 때문에 배열 메서드를 사용하려면 Array.from()이나 spread 연산자 ...을 사용하여 배열로 변환해주어야 합니다.
+
+  //querySelector:
+  //주어진 CSS 선택자와 일치하는 첫 번째 요소를 반환합니다.
+  //일치하는 요소가 없으면 null을 반환합니다.
+  //반환 값은 단일 요소입니다.
+  //const element = document.querySelector('.myClass');
+
+  //querySelectorAll:
+  //주어진 CSS 선택자와 일치하는 모든 요소를 반환합니다.
+  //일치하는 요소가 없으면 빈 NodeList를 반환합니다.
+  //반환 값은 NodeList이며, 모든 일치하는 요소를 포함합니다.
+  //const elements = document.querySelectorAll('.myClass');
+
+  //* getElementsbyId, getElementsByClassName, getElementsByName
+  //* parentNode, previousSibling, nextSibling, firstChild, lastChild
+
+//? 78번. 선택한 DOM요소의 텍스트를 변경하는 코드를 작성해보세요.
+//? 79번. DOM 요소에 이벤트 리스너를 추가하는 코드를 작성하세요.
+//? 80번. 웹 브라우저의 콘솔에 로그를 출력하는 코드를 작성하세요.
+
+//? 81번. Local Storage에 데이터를 저장하고 검색하는 코드를 작성하세요.
+  //* 주의: Local Storage에 저장되는 데이터는 문자열 형태로 저장되므로, 객체나 배열 같은 복잡한 데이터를 저장하려면 해당 데이터를 JSON 문자열로 변환하여 저장하고, 검색 시에는 다시 JSON 파싱하여 사용해야 합니다.
+  
+  // <script>
+  //   // 데이터 저장
+  //   localStorage.setItem('myKey', 'Hello, Local Storage!');
+
+  //   // 데이터 검색
+  //   const storedData = localStorage.getItem('myKey');
+  //   console.log(storedData); // 'Hello, Local Storage!' 출력
+  // </script>
+
+  //이 코드에서는 localStorage.setItem을 사용하여 'myKey'라는 키로 문자열 데이터를 Local Storage에 저장하고 있습니다. 그리고 localStorage.getItem을 사용하여 'myKey' 키에 해당하는 데이터를 검색하고 콘솔에 출력하고 있습니다.
+
+//? 82번. Node.js에서 파일을 읽는 코드를 작성해보세요.
+  //* fs.readfile(비동기), fs.readfileSync(동기)
+  
+//? 83번. node.js에서 HTTP 서버를 생성하는 코드를 작성해보세요.
+  //* Node.js에서 HTTP 서버를 생성하는 가장 기본적인 방법은 http 모듈을 사용하는 것입니다. 아래는 간단한 HTTP 서버를 생성하는 코드의 예시입니다:
+
+  // const http = require('http');
+
+  // //서버를 생성
+  // const server = http.createServer((req, res) => {
+    // //요청이 들어왔을 때의 처리 로직
+    // res.writeHead(200, { 'Content-Type': 'text/plain' });
+    // res.end('Hello, World!\n');
+  // });
+  // 
+  // //서버를 지정한 포트(예: 3000)로 실행
+  // const port = 3000;
+  // server.listen(port, () => {
+    // console.log(`서버가 http://localhost:${port}/ 에서 실행 중입니다.`);
+  // });
+  
+//? 84번. node.js에서 이벤트를 발생시키고 그것을 처리하는 코드를 작성해보세요.
+  //* Node.js에서 이벤트를 발생시키고 처리하기 위해서는 events 모듈을 사용합니다. 아래는 간단한 예시 코드입니다:
+  // const EventEmitter = require('events');
+
+  // // 이벤트를 처리할 클래스 정의
+  // class MyEmitter extends EventEmitter {}
+
+  // // 이벤트 발생 및 처리 로직
+  // const myEmitter = new MyEmitter();
+
+  // // 이벤트 리스너 추가
+  // myEmitter.on('customEvent', (arg) => {
+  //   console.log('이벤트가 발생했습니다. 전달된 인자:', arg);
+  // });
+
+  // // 이벤트 발생
+  // myEmitter.emit('customEvent', '인자1');
+
+  // // 이벤트 발생시 콜백 실행
+  // myEmitter.once('onceEvent', () => {
+  //   console.log('이벤트가 한 번만 발생했습니다.');
+  // });
+
+  // myEmitter.emit('onceEvent');
+  // myEmitter.emit('onceEvent'); // 두 번째 호출은 실행되지 않음
+
+  // on: 이벤트 리스너를 추가합니다.
+  // emit: 이벤트를 발생시킵니다.
+  // once: 이벤트 리스너를 추가하되, 한 번만 실행되도록 합니다.
+
+//? 85번. Express.js를 사용해 Http서버를 생성하는 코드를 작성하세요.
+  //* express()는 createServer와 같은 기능. 서버를 염.
+  //* 그 뒤 get,post요청을 핸들링해주는 라우터 설정.
+  // // Express 모듈 불러오기
+  // const express = require('express');
+
+  // // Express 애플리케이션 생성
+  // const app = express();
+
+  // // 루트 경로에 대한 요청 처리
+  // app.get('/', (req, res) => {
+  //   res.send('Hello, Express!');
+  // });
+
+  // // 서버를 지정한 포트(예: 3000)로 실행
+  // const port = 3000;
+  // app.listen(port, () => {
+  //   console.log(`서버가 http://localhost:${port}/ 에서 실행 중입니다.`);
+  // });
+
+//? 86번. Express.js에서 라우팅을 처리하는 코드를 작성하세요.
+  //* app.get(), app.post(), app.put(), app.delete()등의 메서드를 사용하여 각각의 HTTP 메서드에 대한 라우팅을 설정할 수 있습니다. 이러한 메서드들은 각각의 경로에 대한 요청을 처리하며, 콜백 함수에서는 요청(req)과 응답(res) 객체를 통해 클라이언트와 상호작용할 수 있습니다.
+
+//? 87번. node.js에서 환경변수를 사용하는 방법을 설명하고 예를 들어보세요.
+  //* Node.js에서 환경변수를 사용하는 것은 주로 process.env 객체를 통해 이루어집니다. process.env 객체에는 현재 프로세스의 환경변수가 포함되어 있습니다. 이를 통해 애플리케이션 코드에서 환경변수를 읽어와 사용할 수 있습니다.
+
+//? 88번. javascript에서 문자열을 숫자로 변환하는 방법을 예로 들어보세요.
+  //* parseInt, parseFloat, +
+
+  // let strNumber = "1233.14"
+  // let intNUmber = parseInt(strNumber)
+  // console.log(intNUmber)
+  // let floatNumber = parseFloat(strNumber)
+  // console.log(floatNumber)
+  // console.log(parseInt.strNumber)
+  // console.log(parseFloat.strNumber)
+  // console.log(+strNumber)
+
+//? 89번. Node.js에서 비동기 함수를 사용하는 예를 작성해보세요.
+  //* setTimeout 함수
+  //* 이벤트 리스너
+  //* fetch 함수
+  //* Promise 객체
+  //* async/await함수
+
+//? 90번. javaScript에서 map, filter, reduce함수를 사용하는 예를 들어보세요.
+  //* map(): map 함수는 배열의 각 요소에 대해 주어진 함수를 호출한 결과로 새로운 배열을 생성합니다.
+  //* filter(): filter 함수는 주어진 함수의 조건을 만족하는 요소로 이루어진 배열을 생성합니다.
+  //* reduce(): reduce 함수는 배열의 각 요소에 대해 주어진 함수를 실행하고 누적값을 계산합니다.
+
+//? 91번. fs모듈을 사용하여 디렉토리를 생성하는 코드를 작성하세요.
+  // const fs = require('fs');
+
+  // // 새로 생성할 디렉토리 경로
+  // const newDirectoryPath = 'new_directory';
+
+  // // 디렉토리 생성
+  // fs.mkdir(newDirectoryPath, (err) => {
+  //   if (err) {
+  //     console.error('디렉토리 생성 오류:', err);
+  //     return;
+  //   }
+
+  //   console.log('디렉토리가 성공적으로 생성되었습니다.');
+  // });
+
+//? 92번. node.js에서 path 모듈을 사용하여 파일 경로를 조작하는 코드를 작성해보세요.
+  //* 1번. 경로결합
+  // const path = require('path');
+
+  // const folderPath = '/users/user/documents';
+  // const fileName = 'example.txt';
+
+  // const filePath = path.join(folderPath, fileName);
+
+  // console.log('결합된 경로:', filePath);
+
+  //* 2번. 경로 정규화
+  // const path = require('path');
+
+  // const messyPath = '/users/user/../documents/example.txt';
+  // const normalizedPath = path.normalize(messyPath);
+
+  // console.log('정규화된 경로:', normalizedPath);
+
+  //* 3번. 파일 확장자 추출
+  // const path = require('path');
+
+  // const filePath = '/users/user/documents/example.txt';
+  // const fileExtension = path.extname(filePath);
+
+  // console.log('파일 확장자:', fileExtension);
+  
+  //* 4번. 경로파싱
+  // const path = require('path');
+
+  // const filePath = '/users/user/documents/example.txt';
+  // const pathInfo = path.parse(filePath);
+
+  // console.log('파싱된 경로 정보:', pathInfo);
+
+//? 93번. express.js에서 정적 파일을 호스팅하는 방법을 설명하고 예를 들어보세요.
+  // const express = require('express');
+  // const path = require('path');
+  
+  // const app = express();
+  
+  // // 정적 파일을 제공할 디렉토리를 설정
+  // app.use(express.static(path.join(__dirname, 'public')));
+  
+  // // 기타 라우팅 또는 미들웨어 설정...
+  
+  // const port = 3000;
+  // app.listen(port, () => {
+  //   console.log(`서버가 http://localhost:${port}/ 에서 실행 중입니다.`);
+  // });
+
+//? 94번. Node.js에서 npm 패키지를 설치하고 사용하는 코드를 작성해보세요.
+  //* 밑 코드에서는 axios 패키지를 불러와서, 해당 패키지를 사용하여 JSONPlaceholder API로 HTTP GET 요청을 보내고 응답을 콘솔에 출력하는 예제입니다.
+
+  //* 이제 axios 패키지가 설치되어 있지 않다면 npm install axios 명령을 통해 설치하고, 그 후에 위의 예제 코드를 실행하면 됩니다. 패키지를 설치하면 node_modules 디렉토리가 생성되고, 해당 디렉토리 안에 패키지가 설치됩니다.
+
+  //패키지 설치
+  //npm install axios
+
+  // 패키지 불러오기
+  // const axios = require('axios');
+
+  // // 사용 예제: HTTP GET 요청 보내기
+  // axios.get('https://jsonplaceholder.typicode.com/todos/1')
+  //   .then(response => {
+  //     // 요청이 성공한 경우
+  //     console.log('응답 데이터:', response.data);
+  //   })
+  //   .catch(error => {
+  //     // 요청이 실패한 경우
+  //     console.error('에러:', error);
+  //   });
+
+//? 95번. javascript에서 프로토타입 기반 상속을 구현하는 코드를 작성해보세요.
+  //* 이 코드에서 Animal은 부모 객체이고, Dog는 자식 객체입니다. Dog 생성자 함수 내에서 Animal 생성자를 호출하면서 Animal.call(this, name)을 사용하여 부모 객체의 속성을 상속받습니다. 그리고 Object.create(Animal.prototype)을 통해 자식 객체의 프로토타입을 부모 객체의 인스턴스로 설정하여 메서드를 상속받습니다.
+
+  //* 이렇게 하면 myDog 인스턴스는 Animal의 메서드(speak)와 Dog의 메서드(bark)를 모두 사용할 수 있습니다.
+
+
+  // // 부모 객체 생성자 함수
+  // function Animal(name) {
+  //   this.name = name;
+  // }
+
+  // // 부모 객체의 메서드 추가
+  // Animal.prototype.speak = function() {
+  //   console.log(`${this.name}이(가) 소리를 냅니다.`);
+  // };
+
+  // // 자식 객체 생성자 함수
+  // function Dog(name, breed) {
+  //   // 부모 객체 생성자 호출
+  //   Animal.call(this, name);
+  //   this.breed = breed;
+  // }
+
+  // // 자식 객체의 프로토타입을 부모 객체의 인스턴스로 설정
+  // Dog.prototype = Object.create(Animal.prototype);
+
+  // // 자식 객체의 메서드 추가
+  // Dog.prototype.bark = function() {
+  //   console.log(`${this.name}이(가) 짖습니다.`);
+  // };
+
+  // // 자식 객체의 인스턴스 생성
+  // const myDog = new Dog('멍멍이', '진돗개');
+
+  // // 부모 객체의 메서드 호출
+  // myDog.speak(); // 멍멍이이(가) 소리를 냅니다.
+
+  // // 자식 객체의 메서드 호출
+  // myDog.bark(); // 멍멍이이(가) 짖습니다.
+
+//? 96번. 삼항 연산자를 사용하는 예를 들어보세요.
+  //* 삼항 연산자(ternary operator)는 조건문을 간단하게 표현할 수 있는 JavaScript의 연산자입니다. 삼항 연산자는 다음과 같은 구조를 가지고 있습니다: condition ? expressionIfTrue : expressionIfFalse.
+  
+  // const age = 25;
+
+  // // 삼항 연산자를 사용하여 성인 여부를 판별
+  // const isAdult = age >= 18 ? '성인입니다' : '미성년자입니다';
+
+  // console.log(isAdult); // 출력: '성인입니다'
+
+//? 97번. javascript에서 문자열 템플릿 리터럴을 사용하는 코드를 작성해보세요.
+  //* `` (백틱)으로 둘러싸인 문자열 안에서 ${}를 사용하여 변수나 표현식을 삽입할 수 있습니다. 이를 통해 보다 가독성 높은 문자열을 만들 수 있습니다.
+
+//? 98번. 배열과 객체의 차이점을 설명하세요.
+
+//? 99번. 배열과 객체의 공통점을 설명하세요.
+
+//? 100번. 전개연산자(spread Operator)를 사용하는 코드를 작성하세요.
+
+//? 101번. 배열을 얕은복사와 깊은 복사에 대한 예를 들어보세요.
+  //*shallowCopy는 originalArray를 얕게 복사한 배열입니다. 하위 배열 [3, 4]는 참조를 공유하고 있기 때문에, originalArray의 하위 배열을 수정하면 shallowCopy에도 영향이 미칩니다.
+
+  // const originalArray = [1, 2, [3, 4]];
+
+  // // 얕은 복사
+  // const shallowCopy = [...originalArray];
+
+  // // 원본 배열 수정
+  // originalArray[2][0] = 'modified';
+
+  // console.log(originalArray); // [1, 2, ['modified', 4]]
+  // console.log(shallowCopy);   // [1, 2, ['modified', 4]]
+
+  //*deepCopy는 originalArray를 깊게 복사한 배열입니다. JSON.stringify와 JSON.parse를 사용하여 객체를 문자열로 변환하고 다시 객체로 파싱하는 방법을 통해 깊은 복사를 수행하였습니다. 이 방법은 단점으로 함수나 undefined와 같은 특별한 값들을 복사하지 못한다는 한계가 있습니다. 또한, 객체가 순환 참조를 가지고 있으면 무한루프에 빠질 수 있습니다.
+
+  // const originalArray = [1, 2, [3, 4]];
+
+  // // 깊은 복사
+  // const deepCopy = JSON.parse(JSON.stringify(originalArray));
+
+  // // 원본 배열 수정
+  // originalArray[2][0] = 'modified';
+
+  // console.log(originalArray); // [1, 2, ['modified', 4]]
+  // console.log(deepCopy);      // [1, 2, [3, 4]]
