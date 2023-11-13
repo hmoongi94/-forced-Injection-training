@@ -51,7 +51,10 @@ function findDuplicateNames(array) {
     // 현재 요소를 제외한 배열에서 같은 값의 모든 인덱스를 찾음
     let indexes = nameArray.reduce(
     (acc, element, index) => {
-      if (element === array[i] && i!==index) {
+      if (element === array[i]) {
+        // element가 array[i]와 같을 때의 index를 배열로 만들어준다.
+        // ...스프레드 연산자를 사용해 여러 겹의 배열이 아닌 하나의 배열로 만들어준다.
+        // accumulator의 속성을 활용해 같은 값의 index를 추가로 뽑아 낼 수 있다.
         return [...acc, index];
       } else {
         return acc;
@@ -61,28 +64,28 @@ function findDuplicateNames(array) {
 
     // 중복된 값이 있다면 현재 인덱스와 찾은 인덱스를 기록
     if (indexes.length > 1) {
-      duplicateIndexes.push({ index: i, duplicates: indexes });
+      duplicateIndexes.push({duplicates: indexes });
     }
   }
 
   return duplicateIndexes;
 }
 
-const allSameNameArray = findDuplicateNames(nameArray);
-console.log(allSameNameArray);
+const allSameNameArrayIndex = findDuplicateNames(nameArray);
+console.log(allSameNameArrayIndex);
 
 // const newArray = createArrayWithoutIndex(nameArray, 0)
 // console.log(newArray)
 
 //* 1try
 
-let sameNameArray = []
+// let sameNameArray = []
 
-for (i = 0; i < nameArray.length; i++) {
-  if (createArrayWithoutIndex(nameArray, i).includes(nameArray[i]) === true) {
-    sameNameArray.push(i);
-  }
-}
+// for (i = 0; i < nameArray.length; i++) {
+//   if (createArrayWithoutIndex(nameArray, i).includes(nameArray[i]) === true) {
+//     sameNameArray.push(i);
+//   }
+// }
 // console.log(sameNameArray)
 
 
