@@ -69,7 +69,11 @@ function findDuplicateNames(array) {
     }
   }
 
+  console.log(duplicateIndexes.map(JSON.stringify))
+
   // 중복된 배열 제거하기
+
+  // 배열안의 값끼리 비교할 때는 Set을 써서 중복을 없앨 수 있지만 배열간의 비교는 불가능 하여 배열을 문자화시켜서 비교를 해준다. 비교후에 다시 객체로 파싱해서 배열을 만들어준다.
   const uniqueArrays = Array.from(new Set(duplicateIndexes.map(JSON.stringify)), JSON.parse);
 
   return uniqueArrays
